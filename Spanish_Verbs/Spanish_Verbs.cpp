@@ -10,24 +10,25 @@
 
 class Verbs {
 public:
-    std::vector <std::string> pronouns = { "Yo", "Tu", "El / Elle / Usted", "Nosostros / as", "Vosostros / as", "Ellos / Ellas / Ustedes" };
+    std::vector <std::string> pronouns = { "Yo", "Tu", "El/Elle/Usted", "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes" };
     std::vector <std::string> verbs_regular;
     std::vector <std::string> verbs_nonregular;
-    std::string AR_Congrugation( std::string Verb, std::string Pronoun );
-    std::vector <std::string> IR_Congrugation( std::string Verb );
-    std::vector <std::string> ER_Congrugation( std::string Verb );
+    std::vector <std::string> AR_Endings = { "o", "as","a","amos", "ais", "an" };
+    std::string AR_Congrugation(std::string Verb, std::string Pronoun);
+    std::vector <std::string> IR_Congrugation(std::string Verb);
+    std::vector <std::string> ER_Congrugation(std::string Verb);
 
 
+
+  
+    std::string AR_Congrugation(std::string Verb, int Pronoun_index) {
+     
+        Verb.pop_back();
+        Verb.pop_back();
+        return Verb.append(AR_Endings[Pronoun_index]);
+
+    }
 };
-std::string get_regular_root(std::string Verb)
-{
-    Verb.pop_back();
-    Verb.pop_back();
-    return Verb;
-
-
-}
-
 int main()
 {
     srand(time(0));
@@ -36,9 +37,8 @@ int main()
     for (int i = 0; i< 10; i++)
     {
          index = rand() % 6;
-         std::cout << Test.pronouns[index] << std::endl;
+         //std::cout << Test.pronouns[index] << std::endl;
+         std::cout << Test.pronouns[index] <<" " << Test.AR_Congrugation("hablar", index) << std::endl;
     }
-    get_regular_root("cambinar");
-    get_regular_root("hablar");
 }
 
