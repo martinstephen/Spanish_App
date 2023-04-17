@@ -13,7 +13,7 @@ void Generate_Present_Continous();
 class Verbs_Infinitve {
 public:
     std::vector <std::string> verbs_regular = {"Hablar", "Comer", "Vivir"};
-    std::vector <std::string> verbs_nonregular = { "Estar" };
+    std::vector <std::string> verbs_nonregular = { "Estar" ,"Ir"};
 };
 class Verbs_Pronouns {
 public:
@@ -27,7 +27,7 @@ public:
     std::vector <std::string> ER_Endings_Present_Tense = { "o", "es","e","emos", "éis", "en" };
     std::vector <std::string> IR_Endings_Present_Tense = { "o", "es","e","imos", "ís", "en" };
     std::vector <std::string> ESTAR_Endings_Present_Tense = { "oy", "ás","á","amos", "áis", "án" };
-
+    std::vector <std::string> Ir_Endings_Present_Tense = { "Voy", "Vas","Va","Vamous", "vameis", "Van" };
 
     std::string AR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
         if (Verb == "Estar")
@@ -43,7 +43,11 @@ public:
 
     }
     std::string IR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
-
+        if (Verb == "Ir") {
+            Verb.pop_back();
+            Verb.pop_back();
+            return Verb.append(Ir_Endings_Present_Tense[Pronoun_index]);
+        }
         Verb.pop_back();
         Verb.pop_back();
         return Verb.append(IR_Endings_Present_Tense[Pronoun_index]);
