@@ -6,31 +6,49 @@
 #include "Spanish_Verbs.hpp"
 #include <cstdlib>
 #include <ctime>
+#include <Windows.h>
 //using namespace std;
 
 class Verbs {
 public:
-    std::vector <std::string> pronouns = { "Yo", "Tu", "El/Elle/Usted", "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes" };
+    std::vector <std::string> pronouns = { "Yo", "Tú", "Él/Ella/Usted", "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes" };
     std::vector <std::string> verbs_regular;
     std::vector <std::string> verbs_nonregular;
-    std::vector <std::string> AR_Endings = { "o", "as","a","amos", "ais", "an" };
-    std::string AR_Congrugation(std::string Verb, std::string Pronoun);
-    std::vector <std::string> IR_Congrugation(std::string Verb);
-    std::vector <std::string> ER_Congrugation(std::string Verb);
+    std::vector <std::string> AR_Endings_Present_Tense = { "o", "as","a","amos", "áis", "an" };
+    std::vector <std::string> ER_Endings_Present_Tense = { "o", "es","e","emos", "éis", "en" };
+    std::vector <std::string> IR_Endings_Present_Tense = { "o", "es","e","imos", "ís", "en" };
+    std::string AR_Congrugation_Present_Tense(std::string Verb, std::string Pronoun);
+    std::string ER_Congrugation_Present_Tense(std::string Verb, std::string Pronoun);
+    std::string IR_Congrugation_Present_Tense(std::string Verb, std::string Pronoun);
 
 
 
   
-    std::string AR_Congrugation(std::string Verb, int Pronoun_index) {
+    std::string AR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
      
         Verb.pop_back();
         Verb.pop_back();
-        return Verb.append(AR_Endings[Pronoun_index]);
+        return Verb.append(AR_Endings_Present_Tense[Pronoun_index]);
+
+    }
+    std::string IR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
+
+        Verb.pop_back();
+        Verb.pop_back();
+        return Verb.append(IR_Endings_Present_Tense[Pronoun_index]);
+
+    }
+    std::string ER_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
+
+        Verb.pop_back();
+        Verb.pop_back();
+        return Verb.append(ER_Endings_Present_Tense[Pronoun_index]);
 
     }
 };
 int main()
 {
+    setlocale(LC_ALL, "Spanish");
     srand(time(0));
     Verbs Test;
     int index;
@@ -38,7 +56,10 @@ int main()
     {
          index = rand() % 6;
          //std::cout << Test.pronouns[index] << std::endl;
-         std::cout << Test.pronouns[index] <<" " << Test.AR_Congrugation("hablar", index) << std::endl;
+         std::cout << Test.pronouns[index] << " " << Test.AR_Congrugation_Present_Tense("hablar", index) << std::endl;
+         std::cout << Test.pronouns[index] << " " << Test.IR_Congrugation_Present_Tense("Vivir", index) << std::endl;
+         std::cout << Test.pronouns[index] << " " << Test.ER_Congrugation_Present_Tense("Comer", index) << std::endl;
+
     }
 }
 
