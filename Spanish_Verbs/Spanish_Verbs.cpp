@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <vector>
-
+#include <map>
 #include <cstdlib>
 #include <ctime>
 
@@ -67,22 +67,24 @@ void Generate_Present_Tense() {
     Verbs_Present_Tense Present_tense;
     Verbs_Pronouns Pronoun;
     Verbs_Infinitve Verb;
+
+    auto item = Verb.verbs_regular.begin(); 
     for (int i = 0; i < 100; i++)
     {
         index = rand() % Pronoun.pronouns.size();
         verbs_index = rand() % Verb.verbs_regular.size();
-        if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == AR_ending)
+        if (Verb.verbs_regular[verbs_index].second.substr(Verb.verbs_regular[verbs_index].second.length() - Get_last_2_Letters) == AR_ending)
         {
             std::cout << Pronoun.pronouns[index] << " " << Present_tense.AR_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
         }
-        if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == ER_ending)
-        {
-            std::cout << Pronoun.pronouns[index] << " " << Present_tense.ER_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
-        }
-        if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == IR_ending)
-        {
-            std::cout << Pronoun.pronouns[index] << " " << Present_tense.IR_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
-        }
+        //if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == ER_ending)
+       // {
+       //     std::cout << Pronoun.pronouns[index] << " " << Present_tense.ER_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
+      //  }
+      //  if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == IR_ending)
+      //  {
+      //      std::cout << Pronoun.pronouns[index] << " " << Present_tense.IR_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
+      //  }
 
 
     }
