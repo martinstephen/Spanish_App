@@ -68,7 +68,9 @@ void Generate_Present_Tense() {
     Verbs_Pronouns Pronoun;
     Verbs_Infinitve Verb;
 
-    auto item = Verb.verbs_regular.begin(); 
+    auto it = Verb.verbs_regular.begin(); 
+    std::advance(it, rand() % Verb.verbs_regular.size());
+    std::string random_key = it->first;
     for (int i = 0; i < 100; i++)
     {
         index = rand() % Pronoun.pronouns.size();
