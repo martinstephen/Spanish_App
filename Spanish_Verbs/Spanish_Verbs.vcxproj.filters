@@ -24,12 +24,21 @@
     <ClCompile Include="Present_Continuous.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Verbs_Infinitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Present_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Present_Continous.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Verbs_Infinitive.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pronouns.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -130,10 +130,13 @@
     <ClCompile Include="Present_Continuous.cpp" />
     <ClCompile Include="Present_Tense.cpp" />
     <ClCompile Include="Spanish_Verbs.cpp" />
+    <ClCompile Include="Verbs_Infinitive.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Present_Continous.hpp" />
     <ClInclude Include="Present_Tense.hpp" />
+    <ClInclude Include="Pronouns.hpp" />
+    <ClInclude Include="Verbs_Infinitive.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,32 +3,35 @@
 
 #include <iostream>
 #include <vector>
-#include "Present_Tense.hpp"
-#include "Present_Continous.hpp"
+
 #include <cstdlib>
 #include <ctime>
 
+
+#include "Present_Tense.hpp"
+#include "Present_Continous.hpp"
+#include "Verbs_Infinitive.hpp"
+#include "Pronouns.hpp"
+
+
+
+void setup();
 void Generate_Present_Tense();
 void Generate_Present_Continous();
 
-class Verbs_Infinitve {
-public:
-    std::vector <std::string> verbs_regular = {"Hablar", "Comer", "Vivir"};
-    std::vector <std::string> verbs_nonregular = { "Estar" ,"Ir"};
-};
-class Verbs_Pronouns {
-public:
-    std::vector <std::string> pronouns = { "Yo", "Tú", "Él/Ella/Usted", "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes" };
-};
 
 int main()
 {
-    setlocale(LC_ALL, "Spanish"); // allows spainish characters
-    srand(time(0));
+    setup();
     Generate_Present_Tense();
     Generate_Present_Continous();
     
 }
+void setup() {
+    setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+    srand(time(0));
+}
+
 void Generate_Present_Continous() {
     int index, verbs_index;
     std::string AR_ending = "ar";
