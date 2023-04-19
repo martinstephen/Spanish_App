@@ -3,95 +3,35 @@
 
 #include <iostream>
 #include <vector>
-#include "Spanish_Verbs.hpp"
+
 #include <cstdlib>
 #include <ctime>
 
+
+#include "Present_Tense.hpp"
+#include "Present_Continous.hpp"
+#include "Verbs_Infinitive.hpp"
+#include "Pronouns.hpp"
+
+
+
+void setup();
 void Generate_Present_Tense();
 void Generate_Present_Continous();
 
-class Verbs_Infinitve {
-public:
-    std::vector <std::string> verbs_regular = {"Hablar", "Comer", "Vivir"};
-    std::vector <std::string> verbs_nonregular = { "Estar" ,"Ir"};
-};
-class Verbs_Pronouns {
-public:
-    std::vector <std::string> pronouns = { "Yo", "Tú", "Él/Ella/Usted", "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes" };
-};
 
-class Verbs_Present_Tense {
-public:
-
-    std::vector <std::string> AR_Endings_Present_Tense = { "o", "as","a","amos", "áis", "an" };
-    std::vector <std::string> ER_Endings_Present_Tense = { "o", "es","e","emos", "éis", "en" };
-    std::vector <std::string> IR_Endings_Present_Tense = { "o", "es","e","imos", "ís", "en" };
-    std::vector <std::string> ESTAR_Endings_Present_Tense = { "oy", "ás","á","amos", "áis", "án" };
-    std::vector <std::string> Ir_Endings_Present_Tense = { "Voy", "Vas","Va","Vamous", "vameis", "Van" };
-
-    std::string AR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
-        if (Verb == "Estar")
-        {
-            Verb.pop_back();
-            Verb.pop_back();
-            return Verb.append(ESTAR_Endings_Present_Tense[Pronoun_index]);
-        }
-        Verb.pop_back();
-        Verb.pop_back();
-        return Verb.append(AR_Endings_Present_Tense[Pronoun_index]);
-        
-
-    }
-    std::string IR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
-        if (Verb == "Ir") {
-            Verb.pop_back();
-            Verb.pop_back();
-            return Verb.append(Ir_Endings_Present_Tense[Pronoun_index]);
-        }
-        Verb.pop_back();
-        Verb.pop_back();
-        return Verb.append(IR_Endings_Present_Tense[Pronoun_index]);
-
-    }
-    std::string ER_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
-
-        Verb.pop_back();
-        Verb.pop_back();
-        return Verb.append(ER_Endings_Present_Tense[Pronoun_index]);
-
-    }
-};
-
-class Verbs_Present_Continuous {
-public:
-    std::string AR_Endings_Present_Continous = { "ando" };
-    std::string ER_IR_Endings_Present_Continous = { "iendo" };
-
-    std::string AR_Congrugation_Present_Continous(std::string Verb) {
-
-        Verb.pop_back();
-        Verb.pop_back();
-        return Verb.append(AR_Endings_Present_Continous);
-
-    }
-    std::string ER_IR_Congrugation_Present_Continous(std::string Verb) {
-
-        Verb.pop_back();
-        Verb.pop_back();
-        return Verb.append(ER_IR_Endings_Present_Continous);
-
-    }
-  
-
-};
 int main()
 {
-    setlocale(LC_ALL, "Spanish"); // allows spainish characters
-    srand(time(0));
+    setup();
     Generate_Present_Tense();
     Generate_Present_Continous();
     
 }
+void setup() {
+    setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+    srand(time(0));
+}
+
 void Generate_Present_Continous() {
     int index, verbs_index;
     std::string AR_ending = "ar";
