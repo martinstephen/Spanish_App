@@ -33,7 +33,7 @@ void setup() {
 }
 
 void Generate_Present_Continous() {
-    int index, verbs_index;
+    int index;
     std::string AR_ending = "ar";
     std::string ER_ending = "er";
     std::string IR_ending = "ir";
@@ -45,17 +45,6 @@ void Generate_Present_Continous() {
     for (int i = 0; i < 100; i++)
     {
         index = rand() % Pronoun.pronouns.size();
-        verbs_index = rand() % Verb.verbs_regular.size();
-        if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == AR_ending)
-        {
-            std::cout << Pronoun.pronouns[index] << " " << Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar", index) << " " << Verbs_Present_Continuous.AR_Congrugation_Present_Continous(Verb.verbs_regular[verbs_index]) << std::endl;
-        }
-        if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == ER_ending ||
-            Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == IR_ending
-            )
-        {
-            std::cout << Pronoun.pronouns[index] << " " << Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar", index) << " "<<  Verbs_Present_Continuous.ER_IR_Congrugation_Present_Continous(Verb.verbs_regular[verbs_index]) << std::endl;
-        }
     }
 }
 void Generate_Present_Tense() {
@@ -75,9 +64,15 @@ void Generate_Present_Tense() {
     {
         index = rand() % Pronoun.pronouns.size();
         verbs_index = rand() % Verb.verbs_regular.size();
-        if (Verb.verbs_regular[verbs_index].second.substr(Verb.verbs_regular[verbs_index].second.length() - Get_last_2_Letters) == AR_ending)
+        if (Verb.verbs_regular[random_key].substr(
+                Verb.verbs_regular[random_key].length() -
+                Get_last_2_Letters) ==
+            AR_ending)
         {
-            std::cout << Pronoun.pronouns[index] << " " << Present_tense.AR_Congrugation_Present_Tense(Verb.verbs_regular[verbs_index], index) << std::endl;
+          std::cout << Pronoun.pronouns[index] << " "
+                    << Present_tense.AR_Congrugation_Present_Tense(
+                           Verb.verbs_regular[random_key], index)
+                    << std::endl;
         }
         //if (Verb.verbs_regular[verbs_index].substr(Verb.verbs_regular[verbs_index].length() - Get_last_2_Letters) == ER_ending)
        // {

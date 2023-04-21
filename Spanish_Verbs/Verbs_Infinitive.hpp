@@ -9,7 +9,7 @@ public:
   //std::vector<std::string> verbs_regular = {"Hablar", "Comer", "Vivir"};
   std::map<std::string, std::string>verbs_regular = {
       {"To Speak", "Hablar"},
-      {"to Eat", "Comer"}, 
-      {"To live", "Vivir"}};
+      {"To Eat", "Comer"}, 
+      {"To Live", "Vivir"}};
   std::vector<std::string> verbs_nonregular = {"Estar", "Ir"};
 };
