@@ -10,24 +10,47 @@
 
 #include "Present_Continous.hpp"
 #include "Present_Tense.hpp"
+#include "Future_Tense_Simple.hpp"
 #include "Pronouns.hpp"
 #include "Verbs_Infinitive.hpp"
 
 void setup();
 void Generate_Present_Tense();
 void Generate_Present_Continous();
+void Generate_Future_Simple();
 
 int main() {
   setup();
-  Generate_Present_Tense();
-  Generate_Present_Continous();
+  //Generate_Present_Tense();
+  //Generate_Present_Continous();
+  Generate_Future_Simple();
 }
 void setup() {
   setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
   srand(time(0));
 }
 
-void Generate_Present_Continous() {
+void Generate_Future_Simple() {
+  int index;
+  Verbs_Pronouns Pronoun;
+  Verbs_Infinitve Verb;
+  Verbs_Future_Simple Future_Simple;
+  for (int i = 0; i < 100; i++) {
+    auto it = Verb.verbs_regular.begin();
+    std::advance(it, rand() % Verb.verbs_regular.size());
+    std::string random_key = it->first;
+    index = rand() % Pronoun.pronouns.size();
+
+  
+      std::cout
+          << Pronoun.pronouns[index] << " "
+         
+          << Future_Simple.Congrugation_Future_Simple(
+                     Verb.verbs_regular[random_key], index)
+          << std::endl;
+    }
+  }
+  void Generate_Present_Continous() {
   int index;
   std::string AR_ending = "ar";
   std::string ER_ending = "er";
