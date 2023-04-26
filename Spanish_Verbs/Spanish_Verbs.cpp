@@ -21,8 +21,8 @@ void Generate_Future_Simple();
 
 int main() {
   setup();
-  //Generate_Present_Tense();
-  //Generate_Present_Continous();
+  Generate_Present_Tense();
+  Generate_Present_Continous();
   Generate_Future_Simple();
 }
 void setup() {
@@ -35,7 +35,7 @@ void Generate_Future_Simple() {
   Verbs_Pronouns Pronoun;
   Verbs_Infinitve Verb;
   Verbs_Future_Simple Future_Simple;
-  for (int i = 0; i < 100; i++) {
+  for (int i = 0; i < 10; i++) {
     auto it = Verb.verbs_regular.begin();
     std::advance(it, rand() % Verb.verbs_regular.size());
     std::string random_key = it->first;
@@ -60,7 +60,7 @@ void Generate_Future_Simple() {
   Verbs_Present_Tense Verbs_Present_Tense;
   Verbs_Pronouns Pronoun;
   Verbs_Infinitve Verb;
-  for (int i = 0; i < 100; i++) {
+  for (int i = 0; i < 10; i++) {
     auto it = Verb.verbs_regular.begin();
     std::advance(it, rand() % Verb.verbs_regular.size());
     std::string random_key = it->first;
@@ -101,7 +101,7 @@ void Generate_Present_Tense() {
   Verbs_Present_Tense Present_tense;
   Verbs_Pronouns Pronoun;
   Verbs_Infinitve Verb;  
-  for (int i = 0; i < 100; i++) {
+  for (int i = 0; i < 10; i++) {
     auto it = Verb.verbs_regular.begin();
     std::advance(it, rand() % Verb.verbs_regular.size());
     std::string random_key = it->first;
