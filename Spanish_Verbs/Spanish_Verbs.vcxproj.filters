@@ -33,6 +33,9 @@
     <ClCompile Include="Subjunctive_Present.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Imperfect_Tense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Present_Tense.hpp">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Subjunctive_Present.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Imperfect_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
