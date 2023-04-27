@@ -127,15 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Future_Tense_Simple.cpp" />
+    <ClCompile Include="Imperfect_Tense.cpp" />
+    <ClCompile Include="Indefinite_Tense.cpp" />
     <ClCompile Include="Present_Continuous.cpp" />
     <ClCompile Include="Present_Tense.cpp" />
     <ClCompile Include="Spanish_Verbs.cpp" />
+    <ClCompile Include="Subjunctive_Present.cpp" />
     <ClCompile Include="Verbs_Infinitive.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Future_Tense_Simple.hpp" />
+    <ClInclude Include="Imperfect_Tense.hpp" />
+    <ClInclude Include="Indefinite_Tense.hpp" />
     <ClInclude Include="Present_Continous.hpp" />
     <ClInclude Include="Present_Tense.hpp" />
     <ClInclude Include="Pronouns.hpp" />
+    <ClInclude Include="Subjunctive_Present.hpp" />
     <ClInclude Include="Verbs_Infinitive.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
