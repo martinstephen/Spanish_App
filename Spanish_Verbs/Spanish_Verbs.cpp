@@ -15,6 +15,7 @@
 #include "Verbs_Infinitive.hpp"
 #include "Subjunctive_Present.hpp"
 #include "Imperfect_Tense.hpp"
+#include "Indefinite_Tense.hpp"
 
 void setup();
 void Generate_Present_Tense();
@@ -22,6 +23,8 @@ void Generate_Present_Continous();
 void Generate_Future_Simple();
 void Generate_Subjunctive_Present();
 void Generate_Imperfect();
+void Generate_Indefinite();
+
 
 int main() {
   setup();
@@ -30,6 +33,7 @@ int main() {
   //Generate_Future_Simple();
   //Generate_Subjunctive_Present();
   //Generate_Imperfect();
+  Generate_Indefinite();
 }
 void setup() {
   setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
@@ -37,6 +41,41 @@ void setup() {
 }
 
 
+void Generate_Indefinite() {
+  int index;
+  Verbs_Pronouns Pronoun;
+  Verbs_Infinitve Verb;
+  Verbs_Indefinite Indefinite;
+  std::string AR_ending = "ar";
+  std::string ER_ending = "er";
+  std::string IR_ending = "ir";
+  int Get_last_2_Letters = 2;
+  for (int i = 0; i < 10; i++) {
+    auto it = Verb.verbs_regular.begin();
+    std::advance(it, rand() % Verb.verbs_regular.size());
+    std::string random_key = it->first;
+    index = rand() % Pronoun.pronouns.size();
+
+    if (it->second.substr(Verb.verbs_regular[random_key].length() -
+                          Get_last_2_Letters) == AR_ending) {
+      std::cout << Pronoun.pronouns[index] << " "
+
+                << Indefinite.AR_Indefinte(Verb.verbs_regular[random_key],
+                                           index)
+                << std::endl;
+    }
+    if (it->second.substr(Verb.verbs_regular[random_key].length() -
+                          Get_last_2_Letters) == IR_ending ||
+        it->second.substr(Verb.verbs_regular[random_key].length() -
+                          Get_last_2_Letters) == ER_ending) {
+      std::cout << Pronoun.pronouns[index] << " "
+
+                << Indefinite.ER_IR_Indefinite(Verb.verbs_regular[random_key],
+                                             index)
+                << std::endl;
+    }
+  }
+}
 void Generate_Imperfect() {
   int index;
   Verbs_Pronouns Pronoun;

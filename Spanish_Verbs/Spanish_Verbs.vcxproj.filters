@@ -36,6 +36,9 @@
     <ClCompile Include="Imperfect_Tense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Indefinite_Tense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Present_Tense.hpp">
@@ -57,6 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Imperfect_Tense.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Indefinite_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
