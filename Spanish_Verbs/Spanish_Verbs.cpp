@@ -7,6 +7,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <string>
 
 #include "Present_Continous.hpp"
 #include "Present_Tense.hpp"
@@ -24,7 +25,7 @@ std::string Generate_Future_Simple();
 std::string Generate_Subjunctive_Present();
 std::string Generate_Imperfect();
 std::string Generate_Indefinite();
-void Checker(std::string);
+int Checker(std::string);
 
 
 int main() {
@@ -35,6 +36,7 @@ int main() {
   std::cout << Generate_Subjunctive_Present() << std::endl;
   std::cout << Generate_Imperfect() << std::endl;
   std::cout << Generate_Indefinite() << std::endl;
+  Checker("Yo Hablo");
 }
 void setup() {
   setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
@@ -42,6 +44,19 @@ void setup() {
 }
 
 
+int Checker(std::string Verb_input) { 
+    std::string input;
+    std::getline (std::cin, input);
+    std::cout << Verb_input  << std::endl;
+    std::cout << input << std::endl;
+    if (input == Verb_input) {
+
+      std::cout << "SUCCESSS" << std::endl;
+      return 1;
+    }
+    std::cout << "FAILURE" << std::endl;
+    return 0;
+}
 std::string Generate_Indefinite() {
   int index;
   Verbs_Pronouns Pronoun;
