@@ -30,17 +30,16 @@ int Checker(std::string);
 
 int main() {
   setup();
-  std::cout << Generate_Present_Tense() << std::endl;
-  std::cout << Generate_Present_Continous() << std::endl;
-  std::cout << Generate_Future_Simple() << std::endl;
-  std::cout << Generate_Subjunctive_Present() << std::endl;
-  std::cout << Generate_Imperfect() << std::endl;
-  std::cout << Generate_Indefinite() << std::endl;
-  Checker("Yo Hablo");
+  Checker(Generate_Present_Tense());
+  Checker(Generate_Present_Continous());
+  Checker(Generate_Future_Simple());
+  Checker(Generate_Subjunctive_Present());
+  Checker(Generate_Imperfect());
+  Checker(Generate_Indefinite());
 }
 void setup() {
   setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
-  srand(time(0));
+  srand(time(0)); //set seed for random number generation
 }
 
 
@@ -71,6 +70,9 @@ std::string Generate_Indefinite() {
     std::advance(it, rand() % Verb.verbs_regular.size());
     std::string random_key = it->first;
     index = rand() % Pronoun.pronouns.size();
+
+    std::cout << Pronoun.pronouns[index] + " " + Verb.verbs_regular[random_key]
+              << std::endl;
 
     if (it->second.substr(Verb.verbs_regular[random_key].length() -
                           Get_last_2_Letters) == AR_ending) {
