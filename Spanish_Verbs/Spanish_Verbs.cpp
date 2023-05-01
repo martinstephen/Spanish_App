@@ -8,6 +8,8 @@
 #include <map>
 #include <vector>
 #include <string>
+#include <clocale>
+#include <windows.h> 
 
 #include "Present_Continous.hpp"
 #include "Present_Tense.hpp"
@@ -38,7 +40,10 @@ int main() {
   Checker(Generate_Indefinite());
 }
 void setup() {
-  setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+  std::setlocale(LC_ALL, "es_ES");
+  SetConsoleCP(1252);       // input
+  SetConsoleOutputCP(1252); // output
+  //setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
   srand(time(0)); //set seed for random number generation
 }
 
@@ -46,8 +51,8 @@ void setup() {
 int Checker(std::string Verb_input) { 
     std::string input;
     std::getline (std::cin, input);
-    std::cout << Verb_input  << std::endl;
-    std::cout << input << std::endl;
+    std::cout << "The Answer:" << Verb_input << std::endl;
+    std::cout << "what was entered: " << input << std::endl;
     if (input == Verb_input) {
 
       std::cout << "SUCCESSS" << std::endl;
