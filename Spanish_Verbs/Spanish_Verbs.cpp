@@ -70,15 +70,18 @@ std::string Generate_Indefinite() {
     std::advance(it, rand() % Verb.verbs_regular.size());
     std::string random_key = it->first;
     index = rand() % Pronoun.pronouns.size();
+    std::string Generated_verb;
 
     std::cout << Pronoun.pronouns[index] + " " + Verb.verbs_regular[random_key]
               << std::endl;
 
     if (it->second.substr(Verb.verbs_regular[random_key].length() -
                           Get_last_2_Letters) == AR_ending) {
-      return Pronoun.pronouns[index] + " "
+      Generated_verb=  Pronoun.pronouns[index] + " "
 
              + Indefinite.AR_Indefinte(Verb.verbs_regular[random_key], index);
+    std::cout << Generated_verb << std::endl;
+      return Generated_verb;
     }
     if (it->second.substr(Verb.verbs_regular[random_key].length() -
                           Get_last_2_Letters) == IR_ending ||

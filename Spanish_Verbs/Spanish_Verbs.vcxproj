@@ -140,6 +140,7 @@
     <ClInclude Include="Future_Tense_Simple.hpp" />
     <ClInclude Include="Imperfect_Tense.hpp" />
     <ClInclude Include="Indefinite_Tense.hpp" />
+    <ClInclude Include="Numbers.hpp" />
     <ClInclude Include="Present_Continous.hpp" />
     <ClInclude Include="Present_Tense.hpp" />
     <ClInclude Include="Pronouns.hpp" />
