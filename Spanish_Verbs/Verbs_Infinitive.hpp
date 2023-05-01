@@ -6,7 +6,10 @@
 
 class Verbs_Infinitve {
 public:
-  //std::vector<std::string> verbs_regular = {"Hablar", "Comer", "Vivir"};
+  std::string AR_ending = "ar";
+  std::string ER_ending = "er";
+  std::string IR_ending = "ir";
+  int Get_last_2_Letters = 2;
   std::map<std::string, std::string>verbs_regular = {
       {"To Speak", "Hablar"},
       {"To Eat", "Comer"}, 

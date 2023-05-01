@@ -7,8 +7,7 @@
 using namespace std;
 
 class numbers {
-  vector<pair<int, string>> vec;
-  map<int, string> translations1 = {{1, "uno"},
+  map<int, string> Numbers       = {{1, "uno"},
                                     {2, "dos"},
                                     {3, "tres"},
                                     {4, "cuatro"},
