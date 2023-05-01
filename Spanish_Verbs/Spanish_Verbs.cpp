@@ -40,10 +40,10 @@ int main() {
   Checker(Generate_Indefinite());
 }
 void setup() {
-  std::setlocale(LC_ALL, "es_ES");
+  
   SetConsoleCP(1252);       // input
   SetConsoleOutputCP(1252); // output
-  //setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+  setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
   srand(time(0)); //set seed for random number generation
 }
 
@@ -95,7 +95,7 @@ std::string Generate_Indefinite() {
           + Indefinite.ER_IR_Indefinite(Verb.verbs_regular[random_key], index);
     }
   
-  return 0;
+  return "Fail";
 }
 std::string Generate_Imperfect() {
   int index;
@@ -128,7 +128,7 @@ std::string Generate_Imperfect() {
              + Imperfect.ER_IR_Imperfect(Verb.verbs_regular[random_key], index);
     }
   
-  return 0;
+  return "Fail";
 }
 std::string Generate_Subjunctive_Present() {
   int index;
