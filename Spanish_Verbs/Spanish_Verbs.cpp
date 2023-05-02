@@ -32,11 +32,12 @@ int Checker(std::string);
 
 int main() {
   setup();
-  Checker(Generate_Present_Tense());
-  Checker(Generate_Present_Continous());
-  Checker(Generate_Future_Simple());
-  Checker(Generate_Subjunctive_Present());
-  Checker(Generate_Imperfect());
+
+ // Checker(Generate_Present_Tense());
+  //Checker(Generate_Present_Continous());
+  //Checker(Generate_Future_Simple());
+  //Checker(Generate_Subjunctive_Present());
+  //Checker(Generate_Imperfect());
   Checker(Generate_Indefinite());
 }
 void setup() {
@@ -67,22 +68,20 @@ std::string Generate_Indefinite() {
   Verbs_Infinitve Verb;
   Verbs_Indefinite Indefinite;
   
-    auto it = Verb.verbs_regular.begin();
+    std::map<std::string, std::string>::iterator it = Verb.verbs_regular.begin();
     std::advance(it, rand() % Verb.verbs_regular.size());
+    std::cout << it->first << std::endl;
     std::string random_key = it->first;
     index = rand() % Pronoun.pronouns.size();
     std::string Generated_verb;
 
     std::cout << "Indefinite: "
-               << Pronoun.pronouns[index] + " " +
-                     Verb.verbs_regular[random_key]
+              << Pronoun.pronouns[index] + " " + random_key
               << std::endl;
 
     if (it->second.substr(Verb.verbs_regular[random_key].length() -
                           Verb.Get_last_2_Letters) == Verb.AR_ending) {
-      Generated_verb=  Pronoun.pronouns[index] + " "
-
-             + Indefinite.AR_Indefinte(Verb.verbs_regular[random_key], index);
+      Generated_verb=   Indefinite.AR_Indefinte(Verb.verbs_regular[random_key], index);
     std::cout << Generated_verb << std::endl;
       return Generated_verb;
     }
@@ -90,9 +89,7 @@ std::string Generate_Indefinite() {
                           Verb.Get_last_2_Letters) == Verb.IR_ending ||
         it->second.substr(Verb.verbs_regular[random_key].length() -
                           Verb.Get_last_2_Letters) == Verb.ER_ending) {
-      return Pronoun.pronouns[index] + " "
-
-          + Indefinite.ER_IR_Indefinite(Verb.verbs_regular[random_key], index);
+      return Indefinite.ER_IR_Indefinite(Verb.verbs_regular[random_key], index);
     }
   
   return "Fail";
