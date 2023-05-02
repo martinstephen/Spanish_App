@@ -2,6 +2,7 @@
 // begins and ends there.
 //
 
+#include <boost/algorithm/string.hpp>
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
@@ -54,7 +55,8 @@ int Checker(std::string Verb_input) {
     std::getline (std::cin, input);
     std::cout << "The Answer:" << Verb_input << std::endl;
     std::cout << "what was entered: " << input << std::endl;
-    if (input == Verb_input) {
+    if (boost::to_lower(input)
+        == boost::to_lower(Verb_input)) {
 
       std::cout << "SUCCESSS" << std::endl;
       return 1;
