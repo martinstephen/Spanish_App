@@ -32,17 +32,23 @@ int Checker(std::string);
 
 
 int main() {
+  int i = 0;
+  int Number_of_rounds;
+  std::cout << "Enter the number of times you want to test each tense "<< std::endl;
+  std::cin >> Number_of_rounds;
+  std::cout << "Hit enter to start " << std::endl;
   setup();
-
- Checker(Generate_Present_Tense());
-  Checker(Generate_Present_Continous());
-  Checker(Generate_Future_Simple());
-  Checker(Generate_Subjunctive_Present());
-  Checker(Generate_Imperfect());
-  Checker(Generate_Indefinite());
+  while (i < Number_of_rounds) {
+    Checker(Generate_Present_Tense());
+    Checker(Generate_Present_Continous());
+    Checker(Generate_Future_Simple());
+    Checker(Generate_Subjunctive_Present());
+    Checker(Generate_Imperfect());
+    Checker(Generate_Indefinite());
+    i++;
+  }
 }
 void setup() {
-  
   SetConsoleCP(1252);       // input
   SetConsoleOutputCP(1252); // output
   setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
