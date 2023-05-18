@@ -14,7 +14,7 @@ public:
           
                   {"to say", "decir"},
                   {"to come", "venir"},
-          {"to see", "ver"},         {"to know", "saber"},
+          {"to see", "ver"},         {"to know(something)", "saber"},
           {"to want", "querer"},     {"to like", "gustar"},
           {"to love", "amar"},       {"to speak", "hablar"},
           {"to work", "trabajar"},   {"to study", "estudiar"},
