@@ -1,6 +1,16 @@
 // Spanish_Verbs.cpp : This file contains the 'main' function. Program execution
 // begins and ends there.
 //
+//TODO:
+//make single tenses selectable add more verbs(regular)
+//add irregular verbs
+//add conditional verb
+//add helper comments
+//add numbers game
+//add common words
+
+
+
 
 #include <algorithm>
 #include <cstdlib>
@@ -32,21 +42,19 @@ int Checker(std::string);
 
 
 int main() {
-  int i = 0;
+ /* int i = 0;
   int Number_of_rounds;
   std::cout << "Enter the number of times you want to test each tense "<< std::endl;
   std::cin >> Number_of_rounds;
-  std::cout << "Hit enter to start " << std::endl;
+  std::cout << "Hit enter to start " << std::endl;*/
   setup();
-  while (i < Number_of_rounds) {
     Checker(Generate_Present_Tense());
     Checker(Generate_Present_Continous());
     Checker(Generate_Future_Simple());
     Checker(Generate_Subjunctive_Present());
     Checker(Generate_Imperfect());
     Checker(Generate_Indefinite());
-    i++;
-  }
+
 }
 void setup() {
   SetConsoleCP(1252);       // input
