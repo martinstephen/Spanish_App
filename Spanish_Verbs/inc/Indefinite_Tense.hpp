@@ -6,9 +6,9 @@
 
 class Verbs_Indefinite {
 public:
-  std::vector<std::string> AR_Endings_Indefinite = {"é",    "aste",  "ó",
+  std::vector<std::string> AR_Endings_Indefinite = {"Ã©",    "aste",  "Ã³",
                                                    "amos", "asteis", "aron"};
-  std::vector<std::string> ER_IR_Endings_Indefinite = {"í",    "iste",  "ió",
+  std::vector<std::string> ER_IR_Endings_Indefinite = {"Ã­",    "iste",  "iÃ³",
                                                       "imos", "isteis", "ieron"};
   ;
 

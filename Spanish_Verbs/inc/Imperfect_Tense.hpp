@@ -7,9 +7,9 @@
 class Verbs_Imperfect {
 public:
   std::vector<std::string> AR_Endings_Imperfect = {
-      "aba", "abas", "aba", "ábamos", "abais", "aban"};
+      "aba", "abas", "aba", "Ã¡bamos", "abais", "aban"};
   std::vector<std::string> ER_IR_Endings_Imperfect = {
-      "ía", "ías", "ía", "íamos", "íais", "ían"};
+      "Ã­a", "Ã­as", "Ã­a", "Ã­amos", "Ã­ais", "Ã­an"};
   ;
 
   std::string AR_Imperfect(std::string Verb, int Pronoun_index);

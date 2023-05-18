@@ -1,0 +1,3 @@
+C:/Users/smart/github/Spanish_App/build/CMakeFiles/Spanish_App.dir
+C:/Users/smart/github/Spanish_App/build/CMakeFiles/edit_cache.dir
+C:/Users/smart/github/Spanish_App/build/CMakeFiles/rebuild_cache.dir

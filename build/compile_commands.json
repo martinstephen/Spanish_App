@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/smart/github/Spanish_App/build",
+  "command": "C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\Llvm\\bin\\clang.exe -IC:/Users/smart/github/Spanish_App/Spanish_verbs/inc -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\Spanish_App.dir\\Spanish_Verbs\\src\\Spanish_Verbs.cpp.obj -c C:\\Users\\smart\\github\\Spanish_App\\Spanish_Verbs\\src\\Spanish_Verbs.cpp",
+  "file": "C:\\Users\\smart\\github\\Spanish_App\\Spanish_Verbs\\src\\Spanish_Verbs.cpp"
+}
+]
