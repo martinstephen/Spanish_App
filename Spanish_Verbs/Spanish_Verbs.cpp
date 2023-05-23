@@ -2,12 +2,16 @@
 // begins and ends there.
 //
 //TODO:
-//make single tenses selectable add more verbs(regular)
+//make single tenses selectable [vector of function pointers]
+// Present tense irregular []
+// Present tense regualr with tricks[]
+// add more verbs(regular) 
 //add irregular verbs
 //add conditional verb
 //add helper comments
 //add numbers game
 //add common words
+
 
 
 
