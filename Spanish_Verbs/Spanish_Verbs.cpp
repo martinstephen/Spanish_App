@@ -3,7 +3,7 @@
 //
 //TODO:
 //make single tenses selectable [vector of function pointers]
-// Present tense irregular []
+// Present tense irregular [tick]
 // Present tense regualr with tricks[]
 // add more verbs(regular) 
 //add irregular verbs
