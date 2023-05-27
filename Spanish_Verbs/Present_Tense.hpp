@@ -22,8 +22,8 @@ public:
       "Doy", "Das", "Da", "Damous", "Dais", "Dan"};
   std::vector<std::string> Decir_Endings_Present_Tense = {
       "Digo", "Dices", "Dice", "Decimos", "Decis", "Dicen"};
-  std::vector<std::string> Estar_Endings_Present_Tense = {"oy",   "ás",  "á",
-                                                          "amos", "áis", "án"};
+  std::vector<std::string> Estar_Endings_Present_Tense = 
+  {"oy",   "ás",  "á","amos", "áis", "án"};
   std::vector<std::string> Haber_Endings_Present_Tense = {
       "He", "Has", "Ha", "Hemos", "Hebéis", "Han"};
   std::vector<std::string> Hacer_Endings_Present_Tense = {
@@ -47,7 +47,7 @@ public:
   std::vector<std::string> Ser_Endings_Present_Tense = {
       "Soy", "Eres", "Es", "Somos", "Sois", "Son"};
   std::vector<std::string> Tener_Endings_Present_Tense = {
-      "Voy", "Vas", "Va", "Vamous", "Vameis", "Van"};
+      "Tengo", "Tienes", "Tiene", "Tenemos", "Tienís", "Tan"};
   std::vector<std::string> Traer_Endings_Present_Tense = {
       "", "Vas", "Va", "Vamous", "Vameis", "Van"};
   std::vector<std::string> Venir_Endings_Present_Tense = {
