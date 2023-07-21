@@ -17,10 +17,9 @@ std::string Verbs_Present_Tense::AR_Congrugation_Present_Tense(std::string Verb,
   }
 std::string Verbs_Present_Tense::IR_Congrugation_Present_Tense(std::string Verb,
                                             int Pronoun_index) {
-    if (Verb == "Ir") {
-      Verb.pop_back();
-      Verb.pop_back();
-      return Verb.append(Ir_Endings_Present_Tense[Pronoun_index]);
+    if (Verb == "ir") {
+      Verb.append(Ir_Endings_Present_Tense[Pronoun_index]);
+      return Verb.erase(0, 2);
     }
     Verb.pop_back();
     Verb.pop_back();

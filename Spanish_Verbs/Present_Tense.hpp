@@ -65,4 +65,6 @@ public:
                                             int Pronoun_index);
   std::string ER_Congrugation_Present_Tense(std::string Verb,
                                             int Pronoun_index);
+
+private:
 };
