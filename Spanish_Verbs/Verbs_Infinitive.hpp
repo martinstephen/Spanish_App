@@ -25,5 +25,6 @@ public:
           {"to read", "leer"},       {"to write", "escribir"},
           {"to listen", "escuchar"}, {"to sing", "cantar"},
           {"to dance", "bailar"}};
-  std::vector<std::string> verbs_nonregular = {"Estar", "Ir"};
+  std::map<std::string, std::string> verbs_nonregular = {{"to be", "Estar"},
+                                                         {"To go", "Ir"}};
 };
