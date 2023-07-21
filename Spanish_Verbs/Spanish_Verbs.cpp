@@ -56,7 +56,7 @@ int main() {
   
   while (i < Number_of_rounds) {
     i++;
-    //Checker(Generate_Present_Tense());
+    Checker(Generate_Present_Tense());
     Checker(Generate_Present_Tense_Irregular());
     // Checker(Generate_Present_Continous());
     // Checker(Generate_Future_Simple());
@@ -64,6 +64,7 @@ int main() {
     // Checker(Generate_Imperfect());
     // Checker(Generate_Indefinite());
   }
+  return 0;
 
 }
 void setup() {
@@ -78,13 +79,12 @@ int Checker(std::string Verb_input) {
     std::string input;
     std::getline (std::cin, input);
     std::cout << "The Answer:" << Verb_input << std::endl;
-    std::cout << "what was entered: " << input << std::endl;
+    std::cout << "What was entered: " << input << std::endl;
     std::transform(input.begin(), input.end(), input.begin(), ::tolower);
     std::transform(Verb_input.begin(), Verb_input.end(), Verb_input.begin(),
                    ::tolower);
     if (input == Verb_input)
     {
-
       std::cout << "SUCCESSS" << std::endl;
       return 1;
     }
@@ -299,4 +299,4 @@ std::string Generate_Present_Tense() {
           Verb.verbs_nonregular[random_key], index);
       return 0;
     }
-    }
+   }
