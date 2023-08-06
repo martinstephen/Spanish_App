@@ -1,19 +1,4 @@
-// Spanish_Verbs.cpp : This file contains the 'main' function. Program execution
-// begins and ends there.
-//
-//TODO:
-//make single tenses selectable [vector of function pointers]
-// Present tense irregular [tick]
-// Present tense regualr with tricks[]
-// add more verbs(regular) 
-//add irregular verbs
-//add conditional verb
-//add helper comments
-//add numbers game
-//add common words
-
-
-
+// Spanish_Verbs.cpp : This file contains the 'main' function. 
 
 
 #include <algorithm>
@@ -57,12 +42,12 @@ int main() {
   while (i < Number_of_rounds) {
     i++;
     Checker(Generate_Present_Tense());
-    Checker(Generate_Present_Tense_Irregular());
-    // Checker(Generate_Present_Continous());
-    // Checker(Generate_Future_Simple());
-    // Checker(Generate_Subjunctive_Present());
-    // Checker(Generate_Imperfect());
-    // Checker(Generate_Indefinite());
+    //Checker(Generate_Present_Tense_Irregular());
+    //Checker(Generate_Present_Continous());
+    //Checker(Generate_Future_Simple());
+    //Checker(Generate_Subjunctive_Present());
+    //Checker(Generate_Imperfect());
+    //Checker(Generate_Indefinite());
   }
   return 0;
 
