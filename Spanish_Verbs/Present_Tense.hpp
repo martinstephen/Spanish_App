@@ -17,9 +17,9 @@ public:
   std::vector<std::string> Coger_Endings_Present_Tense = {
       "Cojo", "Coges", "Coge", "Cogemos", "Cogéis", "Cogen"};
   std::vector<std::string> Conocer_Endings_Present_Tense = {
-      "Conozco", "Conoces", "Conoce", "Conocemos", "Conocéis", "Conocen "};
+      "Conozco", "Conoces", "Conoce", "Conocemos", "Conocéis", "Conocen"};
   std::vector<std::string> Dar_Endings_Present_Tense = {
-      "Doy", "Das", "Da", "Damous", "Dais", "Dan"};
+      "Doy", "Das", "Da", "Damos", "Dais", "Dan"};
   std::vector<std::string> Decir_Endings_Present_Tense = {
       "Digo", "Dices", "Dice", "Decimos", "Decis", "Dicen"};
   std::vector<std::string> Estar_Endings_Present_Tense = 
@@ -29,7 +29,7 @@ public:
   std::vector<std::string> Hacer_Endings_Present_Tense = {
       "Hago", "Haces", "Hace", "Hacemos", "Hacéis", "Hacen"};
   std::vector<std::string> Ir_Endings_Present_Tense = {
-      "Voy", "Vas", "Va", "Vamous", "Vameis", "Van"};
+      "Voy", "Vas", "Va", "Vamos", "Vais", "Van"};
   std::vector<std::string> Pedir_Endings_Present_Tense = {
       "Pido", "Pides", "Pide", "Pedimos", "Pedís", "Piden"};
   std::vector<std::string> Pensar_Endings_Present_Tense = {
