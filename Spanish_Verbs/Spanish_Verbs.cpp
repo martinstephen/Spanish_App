@@ -39,12 +39,12 @@ int main() {
   
   while (i < Number_of_rounds) {
     i++;
-    Checker(Verbs_Present_Tense::Generate_Present_Tense());
+   /// Checker(Verbs_Present_Tense::Generate_Present_Tense());
     //Checker(Generate_Present_Tense_Irregular());
     //Checker(Generate_Present_Continous());
     //Checker(Generate_Future_Simple());
     //Checker(Generate_Subjunctive_Present());
-    //Checker(Generate_Imperfect());
+    Checker(Generate_Imperfect());
     //Checker(Generate_Indefinite());
   }
   return 0;
