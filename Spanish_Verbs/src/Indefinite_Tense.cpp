@@ -1,4 +1,4 @@
-#include "Indefinite_Tense.hpp"
+#include "../inc/Indefinite_Tense.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>

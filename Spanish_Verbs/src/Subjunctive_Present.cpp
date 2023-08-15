@@ -1,4 +1,4 @@
-#include "Subjunctive_Present.hpp"
+#include "../inc/Subjunctive_Present.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
