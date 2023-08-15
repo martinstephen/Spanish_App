@@ -24,27 +24,29 @@ void setup();
 std::string Generate_Present_Continous();
 std::string Generate_Future_Simple();
 std::string Generate_Subjunctive_Present();
-std::string Generate_Imperfect();
+
 std::string Generate_Indefinite();
 int Checker(std::string);
 
 
 int main() {
   setup();
-   int i = 0;
+  bool Present = 0, Imperfect = 0;
+  int i = 0;
   int Number_of_rounds;
   std::cout << "Enter the number of times you want to test each tense "<< std::endl;
   std::cin >> Number_of_rounds;
   std::cout << "Hit enter to start " << std::endl;
+
   
   while (i < Number_of_rounds) {
     i++;
-   /// Checker(Verbs_Present_Tense::Generate_Present_Tense());
+     Checker(Verbs_Present_Tense::Generate_Present_Tense());
     //Checker(Generate_Present_Tense_Irregular());
     //Checker(Generate_Present_Continous());
     //Checker(Generate_Future_Simple());
     //Checker(Generate_Subjunctive_Present());
-    Checker(Generate_Imperfect());
+     Checker(Verbs_Imperfect::Generate_Imperfect());
     //Checker(Generate_Indefinite());
   }
   return 0;
@@ -106,34 +108,8 @@ std::string Generate_Indefinite() {
   
   return "Fail";
 }
-std::string Generate_Imperfect() {
-  int index;
-  Verbs_Pronouns Pronoun;
-  Verbs_Infinitve Verb;
-  Verbs_Imperfect Imperfect;
-  int Get_last_2_Letters = 2;
 
-    auto it = Verb.verbs_map.begin();
-    std::advance(it, rand() % Verb.verbs_map.size());
-    std::string random_key = it->first;
-    index = rand() % Pronoun.pronouns.size();
-    std::cout << "Imperfect: "
-             << Pronoun.pronouns[index] + " " +
-                     random_key              << std::endl;
 
-    if (it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.AR_ending) {
-      return  Imperfect.AR_Imperfect(Verb.verbs_map[random_key], index);
-    }
-    if (it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.IR_ending ||
-        it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.ER_ending) {
-      return Imperfect.ER_IR_Imperfect(Verb.verbs_map[random_key], index);
-    }
-  
-  return "Fail";
-}
 std::string Generate_Subjunctive_Present() {
   int index;
   Verbs_Pronouns Pronoun;

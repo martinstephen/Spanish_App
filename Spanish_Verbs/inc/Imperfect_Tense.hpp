@@ -20,4 +20,5 @@ public:
 
   std::string AR_Imperfect(std::string Verb, int Pronoun_index);
   std::string ER_IR_Imperfect(std::string Verb, int Pronoun_index);
+  static std::string Generate_Imperfect();
 };
