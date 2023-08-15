@@ -11,14 +11,14 @@
 #include <clocale>
 #include <windows.h> 
 
-#include "Present_Continous.hpp"
-#include "Present_Tense.hpp"
-#include "Future_Tense_Simple.hpp"
-#include "Pronouns.hpp"
-#include "Verbs_Infinitive.hpp"
-#include "Subjunctive_Present.hpp"
-#include "Imperfect_Tense.hpp"
-#include "Indefinite_Tense.hpp"
+#include "../inc/Present_Continous.hpp"
+#include "../inc/Present_Tense.hpp"
+#include "../inc/Future_Tense_Simple.hpp"
+#include "../inc/Pronouns.hpp"
+#include "../inc/Verbs_Infinitive.hpp"
+#include "../inc/Subjunctive_Present.hpp"
+#include "../inc/Imperfect_Tense.hpp"
+#include "../inc/Indefinite_Tense.hpp"
 
 void setup();
 std::string Generate_Present_Continous();

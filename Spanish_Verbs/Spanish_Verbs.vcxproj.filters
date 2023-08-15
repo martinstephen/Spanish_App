@@ -15,57 +15,57 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Spanish_Verbs.cpp">
+    <ClCompile Include="src\Spanish_Verbs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Present_Tense.cpp">
+    <ClCompile Include="src\Present_Tense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Present_Continuous.cpp">
+    <ClCompile Include="src\Present_Continuous.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Verbs_Infinitive.cpp">
+    <ClCompile Include="src\Verbs_Infinitive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Future_Tense_Simple.cpp">
+    <ClCompile Include="src\Future_Tense_Simple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Subjunctive_Present.cpp">
+    <ClCompile Include="src\Subjunctive_Present.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Imperfect_Tense.cpp">
+    <ClCompile Include="src\Imperfect_Tense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Indefinite_Tense.cpp">
+    <ClCompile Include="src\Indefinite_Tense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Present_Tense.hpp">
+    <ClInclude Include="inc\Present_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Present_Continous.hpp">
+    <ClInclude Include="inc\Present_Continous.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Verbs_Infinitive.hpp">
+    <ClInclude Include="inc\Verbs_Infinitive.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pronouns.hpp">
+    <ClInclude Include="inc\Pronouns.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Future_Tense_Simple.hpp">
+    <ClInclude Include="inc\Future_Tense_Simple.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Subjunctive_Present.hpp">
+    <ClInclude Include="inc\Subjunctive_Present.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Imperfect_Tense.hpp">
+    <ClInclude Include="inc\Imperfect_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Indefinite_Tense.hpp">
+    <ClInclude Include="inc\Indefinite_Tense.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Numbers.hpp">
+    <ClInclude Include="inc\Numbers.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,4 +1,4 @@
-#include "Future_Tense_Simple.hpp"
+#include "../inc/Future_Tense_Simple.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>

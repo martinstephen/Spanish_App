@@ -1,4 +1,4 @@
-#include "Imperfect_Tense.hpp"
+#include "../inc/Imperfect_Tense.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
