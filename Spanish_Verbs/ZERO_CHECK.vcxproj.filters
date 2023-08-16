@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\CMakeFiles\6149d357652c2a9aec626d1bef6c1935\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D7CC4C39-B573-3644-AA63-C74C1359F146}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
