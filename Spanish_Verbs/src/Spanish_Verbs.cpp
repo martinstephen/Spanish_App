@@ -24,19 +24,23 @@ void setup();
 std::string Generate_Present_Continous();
 std::string Generate_Future_Simple();
 std::string Generate_Subjunctive_Present();
-
 std::string Generate_Indefinite();
 int Checker(std::string);
+int Dialog();
 
-
+int Dialog() {
+  int i = 0;
+  int Number_of_rounds;
+  std::cout << "Enter the number of times you want to test each tense "
+            << std::endl;
+  std::cin >> Number_of_rounds;
+  std::cout << "Hit enter to start " << std::endl;
+}
 int main() {
   setup();
   bool Present = 0, Imperfect = 0;
   int i = 0;
-  int Number_of_rounds;
-  std::cout << "Enter the number of times you want to test each tense "<< std::endl;
-  std::cin >> Number_of_rounds;
-  std::cout << "Hit enter to start " << std::endl;
+  int Number_of_rounds = Dialog();
 
   
   while (i < Number_of_rounds) {

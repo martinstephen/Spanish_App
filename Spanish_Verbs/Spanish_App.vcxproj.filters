@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Spanish_Verbs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Future_Tense_Simple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9BA6C1A-110B-37D7-8C1E-9400F16E95FF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
