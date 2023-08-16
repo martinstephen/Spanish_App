@@ -10,9 +10,8 @@
 
 std::string Verbs_Present_Tense::AR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
   if (Verb == "Estar") {
-    Verb.pop_back();
-    Verb.pop_back();
-    return Verb.append(Estar_Endings_Present_Tense[Pronoun_index]);
+  
+    return Estar_Endings_Present_Tense[Pronoun_index];
   }
   if (Verb == "Dar") {
     return Dar_Endings_Present_Tense[Pronoun_index];
