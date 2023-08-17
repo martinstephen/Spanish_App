@@ -20,4 +20,6 @@ public:
 
   std::string AR_Congrugation_Present_Continous(std::string Verb);
   std::string ER_IR_Congrugation_Present_Continous(std::string Verb);
+
+  static std::string Generate_Present_Continous();
 };

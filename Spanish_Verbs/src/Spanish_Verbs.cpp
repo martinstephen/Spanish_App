@@ -21,7 +21,6 @@
 #include "../inc/Indefinite_Tense.hpp"
 
 void setup();
-std::string Generate_Present_Continous();
 std::string Generate_Future_Simple();
 std::string Generate_Subjunctive_Present();
 std::string Generate_Indefinite();
@@ -48,11 +47,11 @@ int main() {
   
   while (i < Number_of_rounds) {
     i++;
-     //Checker(Verbs_Present_Tense::Generate_Present_Tense());
-    Checker(Generate_Present_Continous());
+     Checker(Verbs_Present_Tense::Generate_Present_Tense());
+    Checker(Verbs_Present_Continuous::Generate_Present_Continous());
     //Checker(Generate_Future_Simple());
     //Checker(Generate_Subjunctive_Present());
-    // Checker(Verbs_Imperfect::Generate_Imperfect());
+     Checker(Verbs_Imperfect::Generate_Imperfect());
     //Checker(Generate_Indefinite());
   }
   return 0;
@@ -166,41 +165,4 @@ std::string Generate_Future_Simple() {
     return 0;
     
   }
-std::string Generate_Present_Continous() {
-  int index;
-  Verbs_Present_Continuous Verbs_Present_Continuous;
-  Verbs_Present_Tense Verbs_Present_Tense;
-  Verbs_Pronouns Pronoun;
-  Verbs_Infinitve Verb;
-  
-    auto it = Verb.verbs_map.begin();
-    std::advance(it, rand() % Verb.verbs_map.size());
-    std::string random_key = it->first;
-    index = rand() % Pronoun.pronouns.size();
-    std::string output;
-    std::cout << "Present Continous: " << Pronoun.pronouns[index] + " " +
-                       random_key
-              << std::endl;
-    if (it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.AR_ending) {
-      return 
-          Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar", index) +
-          " " +
-          Verbs_Present_Continuous.AR_Congrugation_Present_Continous(
-              Verb.verbs_map[random_key]);
-               
-    }
-    if (it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.ER_ending
-      ||
-       it->second.substr(Verb.verbs_map[random_key].length() -
-                          Verb.Get_last_2_Letters) == Verb.ER_ending) {
-      return
-            Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar", index)
-          + " "
-          + Verbs_Present_Continuous.ER_IR_Congrugation_Present_Continous(
-                 Verb.verbs_map[random_key])
-          ;
-    }
-  
-}
+
