@@ -1,3 +1,3 @@
-C:/Users/smart/source/repos/Spanish_Verbs/Spanish_Verbs/CMakeFiles/Spanish_App.dir
+C:/Users/smart/source/repos/Spanish_Verbs/Spanish_Verbs/CMakeFiles/Spanish_EXE.dir
 C:/Users/smart/source/repos/Spanish_Verbs/Spanish_Verbs/CMakeFiles/ALL_BUILD.dir
 C:/Users/smart/source/repos/Spanish_Verbs/Spanish_Verbs/CMakeFiles/ZERO_CHECK.dir

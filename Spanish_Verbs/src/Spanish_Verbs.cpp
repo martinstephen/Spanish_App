@@ -1,6 +1,3 @@
-// Spanish_Verbs.cpp : This file contains the 'main' function. 
-
-
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>

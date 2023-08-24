@@ -315,6 +315,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Spanish_Verbs.cpp" />
     <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Future_Tense_Simple.cpp" />
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Imperfect_Tense.cpp" />
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Indefinite_Tense.cpp" />
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Present_Continuous.cpp" />
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Present_Tense.cpp" />
+    <ClCompile Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\src\Subjunctive_Present.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\smart\source\repos\Spanish_Verbs\Spanish_Verbs\ZERO_CHECK.vcxproj">
