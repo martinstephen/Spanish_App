@@ -140,6 +140,7 @@ std::string Generate_Subjunctive_Present() {
     
     return 0;
   }
+  return 0;
 }
 std::string Generate_Future_Simple() {
   int index;

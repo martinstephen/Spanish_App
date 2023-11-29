@@ -12,7 +12,7 @@ public:
   std::string Ir_Present_Continous = {"Yendo"};
   std::string Leer_Present_Continous = {"Leyendo"};
   std::string Creer_Present_Continous = {"Creyendo"};
-  std::string Oír_Present_Continous = {"Oyendo"};
+  std::string OÃ­r_Present_Continous = {"Oyendo"};
   std::string Traer_Present_Continous = {"Trayendo"};
   std::string Pedir_Present_Continous = {"Pidiendo"};
   std::string Venir_Present_Continous = {"Viniendo"};
