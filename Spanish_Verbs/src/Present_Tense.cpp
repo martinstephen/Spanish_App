@@ -44,8 +44,8 @@ std::string Verbs_Present_Tense::IR_Congrugation_Present_Tense(std::string Verb,
     if (Verb == "Venir") {
       return Venir_Endings_Present_Tense[Pronoun_index];
     }
-    if (Verb == "Oír") {
-      return Oír_Endings_Present_Tense[Pronoun_index];
+    if (Verb == "OÃ­r") {
+      return OÃ­r_Endings_Present_Tense[Pronoun_index];
     }
 
     Verb.pop_back();

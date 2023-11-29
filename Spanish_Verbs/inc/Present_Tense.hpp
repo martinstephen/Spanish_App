@@ -8,54 +8,54 @@ class Verbs_Present_Tense {
 public:
 
   std::vector<std::string> AR_Endings_Present_Tense = {"o",    "as",  "a",
-                                                       "amos", "áis", "an"};
+                                                       "amos", "Ã¡is", "an"};
   std::vector<std::string> ER_Endings_Present_Tense = {"o",    "es",  "e",
-                                                       "emos", "éis", "en"};
+                                                       "emos", "Ã¡is", "en"};
   std::vector<std::string> IR_Endings_Present_Tense = {"o",    "es", "e",
-                                                       "imos", "ís", "en"};
+                                                       "imos", "Ã­s", "en"};
  
  std::vector<std::string> Coger_Endings_Present_Tense = {
-      "Cojo", "Coges", "Coge", "Cogemos", "Cogéis", "Cogen"};
+      "Cojo", "Coges", "Coge", "Cogemos", "Cogï¿½is", "Cogen"};
   std::vector<std::string> Conocer_Endings_Present_Tense = {
-      "Conozco", "Conoces", "Conoce", "Conocemos", "Conocéis", "Conocen"};
+      "Conozco", "Conoces", "Conoce", "Conocemos", "Conocï¿½is", "Conocen"};
   std::vector<std::string> Dar_Endings_Present_Tense = {"Doy",   "Das",  "Da",
                                                         "Damos", "Dais", "Dan"};
   std::vector<std::string> Decir_Endings_Present_Tense = {
-      "Digo", "Dices", "Dice", "Decimos", "Decís", "Dicen"};
+      "Digo", "Dices", "Dice", "Decimos", "Decï¿½s", "Dicen"};
   std::vector<std::string> Estar_Endings_Present_Tense = {
-      "Estoy", "Estás", "Está", "Estamos", "Estáis", "Están"};
+      "Estoy", "Estï¿½s", "Estï¿½", "Estamos", "Estï¿½is", "Estï¿½n"};
   std::vector<std::string> Haber_Endings_Present_Tense = {
-      "He", "Has", "Ha", "Hemos", "Habéis", "Han"};
+      "He", "Has", "Ha", "Hemos", "Habï¿½is", "Han"};
   std::vector<std::string> Hacer_Endings_Present_Tense = {
-      "Hago", "Haces", "Hace", "Hacemos", "Hacéis", "Hacen"};
+      "Hago", "Haces", "Hace", "Hacemos", "Hacï¿½is", "Hacen"};
   std::vector<std::string> Ir_Endings_Present_Tense = {"Voy",   "Vas",  "Va",
                                                        "Vamos", "Vais", "Van"};
   std::vector<std::string> Pedir_Endings_Present_Tense = {
-      "Pido", "Pides", "Pide", "Pedimos", "Pedís", "Piden"};
+      "Pido", "Pides", "Pide", "Pedimos", "Pedï¿½s", "Piden"};
   std::vector<std::string> Pensar_Endings_Present_Tense = {
-      "Pienso", "Piensas", "Piensa", "Pensamos", "Pensáis", "Piensan"};
+      "Pienso", "Piensas", "Piensa", "Pensamos", "Pensï¿½is", "Piensan"};
   std::vector<std::string> Poder_Endings_Present_Tense = {
-      "Puedo", "Puedes", "Puede", "Podemos", "Podéis", "Pueden"};
+      "Puedo", "Puedes", "Puede", "Podemos", "Podï¿½is", "Pueden"};
   std::vector<std::string> Poner_Endings_Present_Tense = {
-      "Pongo", "Pones", "Pone", "Ponemos", "Ponéis", "Ponen"};
+      "Pongo", "Pones", "Pone", "Ponemos", "Ponï¿½is", "Ponen"};
   std::vector<std::string> Querer_Endings_Present_Tense = {
-      "Quiero", "Quieres", "Quiere", "Queremos", "Queréis", "Quieren"};
+      "Quiero", "Quieres", "Quiere", "Queremos", "Querï¿½is", "Quieren"};
   std::vector<std::string> Salir_Endings_Present_Tense = {
-      "Salgo", "Sales", "Sale", "Salimos", "Salís", "Salen"};
+      "Salgo", "Sales", "Sale", "Salimos", "Salï¿½s", "Salen"};
   std::vector<std::string> Saber_Endings_Present_Tense = {
-      "Sé", "Sabes", "Sabe", "Sabemos", "Sabéis", "Saben"};
+      "Sï¿½", "Sabes", "Sabe", "Sabemos", "Sabï¿½is", "Saben"};
   std::vector<std::string> Ser_Endings_Present_Tense = {"Soy",   "Eres", "Es",
                                                         "Somos", "Sois", "Son"};
   std::vector<std::string> Tener_Endings_Present_Tense = {
-      "Tengo", "Tienes", "Tiene", "Tenemos", "Tenéis", "Tienen"};
+      "Tengo", "Tienes", "Tiene", "Tenemos", "Tenï¿½is", "Tienen"};
   std::vector<std::string> Traer_Endings_Present_Tense = {
-      "Traigo", "Traes", "Trae", "Traemos", "Traéis", "Traen"};
+      "Traigo", "Traes", "Trae", "Traemos", "Traï¿½is", "Traen"};
   std::vector<std::string> Venir_Endings_Present_Tense = {
-      "Vengo", "Vienes", "Viene", "Venimos", "Venís", "Vienen"};
+      "Vengo", "Vienes", "Viene", "Venimos", "Venï¿½s", "Vienen"};
   std::vector<std::string> Jugar_Endings_Present_Tense = {
-      "Juego", "Juegas", "Juega", "Jugamos", "Jugáis", "Juegan"};
-  std::vector<std::string> Oír_Endings_Present_Tense = {
-      "Oigo", "Oyes", "Oye", "Oímos", "Oís", "Oyen"};
+      "Juego", "Juegas", "Juega", "Jugamos", "Jugï¿½is", "Juegan"};
+  std::vector<std::string> OÃ­r_Endings_Present_Tense = {
+      "Oigo", "Oyes", "Oye", "Oï¿½mos", "Oï¿½s", "Oyen"};
   std::vector<std::string> Ver_Endings_Present_Tense = {"Veo",   "Ves",  "Ve",
                                                         "Vemos", "Veis", "Ven"};
 

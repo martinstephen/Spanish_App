@@ -26,8 +26,8 @@
     if (Verb == "Creer") {
       return Creer_Present_Continous;
     }
-    if (Verb == "Oír") {
-      return Oír_Present_Continous;
+    if (Verb == "OÃ­r") {
+      return OÃ­r_Present_Continous;
     }
     if (Verb == "Traer") {
       return Traer_Present_Continous;

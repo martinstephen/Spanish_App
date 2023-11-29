@@ -1,6 +1,3 @@
-// Spanish_Verbs.cpp : This file contains the 'main' function. 
-
-
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
@@ -143,6 +140,7 @@ std::string Generate_Subjunctive_Present() {
     
     return 0;
   }
+  return 0;
 }
 std::string Generate_Future_Simple() {
   int index;
