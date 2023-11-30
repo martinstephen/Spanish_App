@@ -1,10 +1,10 @@
-#include "../inc/Imperfect_Tense.hpp"
+#include "Imperfect_Tense.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 #include <vector>
-#include "../inc/Pronouns.hpp"
-#include "../inc/Verbs_Infinitive.hpp"
+#include "Pronouns.hpp"
+#include "Verbs_Infinitive.hpp"
 std::string Verbs_Imperfect::AR_Imperfect(std::string Verb,
                                                   int Pronoun_index) {
 

@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "../inc/Present_Continous.hpp"
+#include "Present_Continous.hpp"
 #include <cstdlib>
 #include <ctime>
 
-#include "../inc/Pronouns.hpp"
-#include "../inc/Verbs_Infinitive.hpp"
-#include "../inc/Present_Tense.hpp"
+#include "Pronouns.hpp"
+#include "Verbs_Infinitive.hpp"
+#include "Present_Tense.hpp"
 
   std::string Verbs_Present_Continuous::AR_Congrugation_Present_Continous(std::string Verb) {
 
