@@ -18,7 +18,6 @@ jobs:
         uses: threeal/cmake-action@v1.3.0
         with:
           source-dir: Spanish_Verbs
-          build-dir: Spanish_Verbs/build
 
       - name: Build Project
         run: cmake --build build
