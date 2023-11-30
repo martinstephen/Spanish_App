@@ -16,6 +16,8 @@ jobs:
 
       - name: Configure Project
         uses: threeal/cmake-action@v1.3.0
+        with:
+          source-dir: Spanish_verbs
 
       - name: Build Project
         run: cmake -S /Spanish_Verbs --build build
