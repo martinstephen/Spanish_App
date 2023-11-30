@@ -20,5 +20,5 @@ jobs:
           source-dir: Spanish_Verbs
 
       - name: Build Project
-        run: cmake --build build
+        run: cmake
 
