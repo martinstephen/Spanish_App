@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Spanish_Verbs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Future_Tense_Simple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Imperfect_Tense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Indefinite_Tense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Present_Continuous.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Present_Tense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\src\Subjunctive_Present.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2BC2DDEE-3EE2-35A0-A4D7-A2ACEA337413}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

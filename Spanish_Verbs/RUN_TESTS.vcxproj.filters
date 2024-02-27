@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\smart\github\Spanish_App\Spanish_Verbs\CMakeFiles\6835c9d4042e7807adf68168119c3934\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5E670D6A-1BFC-3376-8102-92772CF6E7C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

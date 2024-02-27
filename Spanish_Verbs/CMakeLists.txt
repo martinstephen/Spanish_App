@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.1.5)
 # set the project name and version
 project(Spanish_Verbs)
 
+enable_testing()
 include_directories(inc)
 # Add main.cpp file of project root directory as source file
 set (SOURCE_FILES src/Spanish_Verbs.cpp 
@@ -13,6 +14,8 @@ src/Present_Continuous.cpp
 src/Present_Tense.cpp 
 src/Subjunctive_Present.cpp 
 )
+add_subdirectory(src)
+add_subdirectory(lib/googletest)
 
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(Spanish_EXE  ${SOURCE_FILES})
