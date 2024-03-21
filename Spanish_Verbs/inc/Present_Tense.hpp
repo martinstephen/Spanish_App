@@ -15,7 +15,7 @@ public:
                                                        "imos", "ís", "en"};
  
  std::vector<std::string> Coger_Endings_Present_Tense = {
-      "Cojo", "Coges", "Coge", "Cogemos", "Cog�is", "Cogen"};
+      "Cojo", "Coges", "Coge", "Cogemos", "Cogéis", "Cogen"};
   std::vector<std::string> Conocer_Endings_Present_Tense = {
       "Conozco", "Conoces", "Conoce", "Conocemos", "Conoc�is", "Conocen"};
   std::vector<std::string> Dar_Endings_Present_Tense = {"Doy",   "Das",  "Da",
@@ -43,7 +43,7 @@ public:
   std::vector<std::string> Salir_Endings_Present_Tense = {
       "Salgo", "Sales", "Sale", "Salimos", "Sal�s", "Salen"};
   std::vector<std::string> Saber_Endings_Present_Tense = {
-      "S�", "Sabes", "Sabe", "Sabemos", "Sab�is", "Saben"};
+      "Sé", "Sabes", "Sabe", "Sabemos", "Sab�is", "Saben"};
   std::vector<std::string> Ser_Endings_Present_Tense = {"Soy",   "Eres", "Es",
                                                         "Somos", "Sois", "Son"};
   std::vector<std::string> Tener_Endings_Present_Tense = {

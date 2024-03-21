@@ -123,6 +123,7 @@ std::string Verbs_Present_Tense::Generate_Present_Tense() {
                           Verb.Get_last_2_Letters) == Verb.ER_ending) {
       return Present_tense.ER_Congrugation_Present_Tense(
           Verb.verbs_map[random_key], index);
-      return 0;
+      
     }
+    return 0;
 }

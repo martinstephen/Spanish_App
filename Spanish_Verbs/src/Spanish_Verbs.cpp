@@ -55,9 +55,8 @@ int main() {
 
 }
 void setup() {
-  SetConsoleCP(1252);       // input
-  SetConsoleOutputCP(1252); // output
-  setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+  SetConsoleCP(CP_UTF8);       // input
+  SetConsoleOutputCP(CP_UTF8); // output
   srand(time(0)); //set seed for random number generation
 }
 
