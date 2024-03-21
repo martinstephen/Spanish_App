@@ -23,7 +23,7 @@ public:
   std::vector<std::string> Decir_Endings_Present_Tense = {
       "Digo", "Dices", "Dice", "Decimos", "Dec�s", "Dicen"};
   std::vector<std::string> Estar_Endings_Present_Tense = {
-      "Estoy", "Est�s", "Est�", "Estamos", "Est�is", "Est�n"};
+      "Estoy", "Estás", "Está", "Estamos", "Estáis", "Están"};
   std::vector<std::string> Haber_Endings_Present_Tense = {
       "He", "Has", "Ha", "Hemos", "Hab�is", "Han"};
   std::vector<std::string> Hacer_Endings_Present_Tense = {

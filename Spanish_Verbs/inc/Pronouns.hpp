@@ -3,6 +3,6 @@
 class Verbs_Pronouns {
 public:
   std::vector<std::string> pronouns = {
-      "Yo",           "Tq",           "ql/Ella/Usted",
+      "Yo",           "Tú",           "El/Ella/Usted",
       "Nosostros/as", "Vosostros/as", "Ellos/Ellas/Ustedes"};
 };

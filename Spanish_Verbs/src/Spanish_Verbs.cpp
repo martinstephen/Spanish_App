@@ -44,11 +44,11 @@ int main() {
   
   while (i < Number_of_rounds) {
     i++;
-     Checker(Verbs_Present_Tense::Generate_Present_Tense());
-    Checker(Verbs_Present_Continuous::Generate_Present_Continous());
+    Checker(Verbs_Present_Tense::Generate_Present_Tense());
+    //Checker(Verbs_Present_Continuous::Generate_Present_Continous());
     //Checker(Generate_Future_Simple());
     //Checker(Generate_Subjunctive_Present());
-     Checker(Verbs_Imperfect::Generate_Imperfect());
+    //Checker(Verbs_Imperfect::Generate_Imperfect());
     //Checker(Generate_Indefinite());
   }
   return 0;
@@ -110,7 +110,6 @@ std::string Generate_Indefinite() {
   
   return "Fail";
 }
-
 
 std::string Generate_Subjunctive_Present() {
   int index;

@@ -19,9 +19,6 @@ std::string Verbs_Present_Tense::AR_Congrugation_Present_Tense(std::string Verb,
   if (Verb == "Pensar") {
     return Pensar_Endings_Present_Tense[Pronoun_index];
   }
-
-
-
     Verb.pop_back();
     Verb.pop_back();
     return Verb.append(AR_Endings_Present_Tense[Pronoun_index]);
