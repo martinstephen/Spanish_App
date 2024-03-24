@@ -55,6 +55,7 @@ int main() {
 
 }
 void setup() {
+  std::setlocale(LC_ALL, "spanish");
   SetConsoleCP(CP_UTF8);       // input
   SetConsoleOutputCP(CP_UTF8); // output
   srand(time(0)); //set seed for random number generation
