@@ -32,6 +32,7 @@ int Dialog()
 {
   int i = 0;
   int Number_of_rounds = 0;
+  std::cout << "In dialog:: ú í ó á é" << "\n"; // set seed for random number generation
   std::cout << "Enter the number of times you want to test each tense " << "\n";
   std::cin >> Number_of_rounds;
   std::cin.ignore();
@@ -50,20 +51,21 @@ int main()
   {
     i++;
     Checker(Verbs_Present_Tense::Generate_Present_Tense());
-    // Checker(Verbs_Present_Continuous::Generate_Present_Continous());
-    // Checker(Generate_Future_Simple());
-    // Checker(Generate_Subjunctive_Present());
-    // Checker(Verbs_Imperfect::Generate_Imperfect());
-    // Checker(Generate_Indefinite());
+    //  Checker(Verbs_Present_Continuous::Generate_Present_Continous());
+    //  Checker(Generate_Future_Simple());
+    //  Checker(Generate_Subjunctive_Present());
+    //  Checker(Verbs_Imperfect::Generate_Imperfect());
+    //  Checker(Generate_Indefinite());
   }
   return 0;
 }
 void setup()
 {
   // SetConsoleCP(1252);           // 1252      // input
-  SetConsoleOutputCP(65001);    // output
-  setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
-  srand(time(0));               // set seed for random number generation
+  SetConsoleOutputCP(CP_UTF8); // output
+  // setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
+  srand(time(0));
+  std::cout << "In setup:: ú í ó á é" << "\n"; // set seed for random number generation
 }
 
 int Checker(std::string Verb_input)
