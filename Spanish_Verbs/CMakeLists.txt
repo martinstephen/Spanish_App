@@ -5,7 +5,8 @@ project(Spanish_Verbs)
 
 include_directories(inc)
 # Add main.cpp file of project root directory as source file
-set (SOURCE_FILES src/Spanish_Verbs.cpp 
+set (SOURCE_FILES 
+src/Spanish_Verbs.cpp 
 src/Future_Tense_Simple.cpp  
 src/Imperfect_Tense.cpp 
 src/Indefinite_Tense.cpp 

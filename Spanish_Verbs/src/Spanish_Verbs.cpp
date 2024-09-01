@@ -61,11 +61,9 @@ int main()
 }
 void setup()
 {
-  // SetConsoleCP(1252);           // 1252      // input
-  SetConsoleOutputCP(CP_UTF8); // output
-  // setlocale(LC_ALL, "Spanish"); // allows spainish characters to be printed
-  srand(time(0));
-  std::cout << "In setup:: ú í ó á é" << "\n"; // set seed for random number generation
+  SetConsoleOutputCP(CP_UTF8); // set output for spanish characters
+  srand(time(0));              // set seed for random number generation
+  std::cout << "In setup:: ú í ó á é" << "\n";
 }
 
 int Checker(std::string Verb_input)
