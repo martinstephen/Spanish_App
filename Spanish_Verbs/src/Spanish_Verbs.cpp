@@ -20,32 +20,20 @@
 #include "Subjunctive_Present.hpp"
 #include "Imperfect_Tense.hpp"
 #include "Indefinite_Tense.hpp"
+#include "Dialog.hpp"
 
 void setup();
 std::string Generate_Future_Simple();
 std::string Generate_Subjunctive_Present();
 std::string Generate_Indefinite();
 int Checker(std::string);
-int Dialog();
-
-int Dialog()
-{
-  int i = 0;
-  int Number_of_rounds = 0;
-  std::cout << "In dialog:: ú í ó á é" << "\n"; // set seed for random number generation
-  std::cout << "Enter the number of times you want to test each tense " << "\n";
-  std::cin >> Number_of_rounds;
-  std::cin.ignore();
-
-  return Number_of_rounds;
-}
 
 int main()
 {
   setup();
   bool Present = 0, Imperfect = 0;
   int i = 0;
-  int Number_of_rounds = Dialog();
+  int Number_of_rounds = Dialog::Inital_Dialog();
 
   while (i < Number_of_rounds)
   {

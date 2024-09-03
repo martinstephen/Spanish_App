@@ -14,6 +14,7 @@ src/Indefinite_Tense.cpp
 src/Present_Continuous.cpp 
 src/Present_Tense.cpp 
 src/Subjunctive_Present.cpp 
+src/Dialog.cpp
 )
 
 # Add executable target with source files listed in SOURCE_FILES variable
