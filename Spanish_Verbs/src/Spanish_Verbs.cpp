@@ -7,9 +7,9 @@
 #include <string>
 #include <locale>
 #include <clocale>
-#include <windows.h>
+//#include <windows.h>
 #include <fcntl.h>
-#include <io.h>
+//#include <io.h>
 #include <stdio.h>
 
 #include "Present_Continous.hpp"
@@ -61,7 +61,7 @@ int main()
 }
 void setup()
 {
-  SetConsoleOutputCP(CP_UTF8); // set output for spanish characters
+  //SetConsoleOutputCP(CP_UTF8); // set output for spanish characters
   srand(time(0));              // set seed for random number generation
   std::cout << "In setup:: ú í ó á é" << "\n";
 }
