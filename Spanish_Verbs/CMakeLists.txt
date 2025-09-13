@@ -21,10 +21,16 @@ add_executable(Spanish_EXE  ${SOURCE_FILES})
 
 if(BUILD_TEST)
   message("Building unit tests: Yes")
-  find_package(Catch2 REQUIRED)
-
-  include(CTest)
-  add_subdirectory(tests)
+  include(FetchContent)
+ FetchContent_Declare(
+  Catch2
+  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+  GIT_TAG v3.5.2 # or latest stable
+)
+FetchContent_MakeAvailable(Catch2)
+target_link_libraries(Spanish_EXE PRIVATE Catch2::Catch2WithMain)
 else()
   message("Building unit tests: No (default)")
 endif()
+
+
