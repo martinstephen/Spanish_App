@@ -22,7 +22,7 @@ add_executable(Spanish_EXE  ${SOURCE_FILES})
 if(BUILD_TEST)
   message("Building unit tests: Yes")
   include(FetchContent)
- FetchContent_Declare(
+  FetchContent_Declare(
   Catch2
   GIT_REPOSITORY https://github.com/catchorg/Catch2.git
   GIT_TAG v3.5.2 # or latest stable
