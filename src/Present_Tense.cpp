@@ -9,7 +9,7 @@
 #include "Present_Tense.hpp"
 
 
-std::string Verbs_Present_Tense::AR_Congrugation_Present_Tense(std::string Verb, int Pronoun_index) {
+std::string Verbs_Present_Tense::AR_Conjugation_Present_Tense(std::string Verb, int Pronoun_index) {
   if (Verb == "Estar") {
   
     return Estar_Endings_Present_Tense[Pronoun_index];
@@ -24,7 +24,7 @@ std::string Verbs_Present_Tense::AR_Congrugation_Present_Tense(std::string Verb,
     Verb.pop_back();
     return Verb.append(AR_Endings_Present_Tense[Pronoun_index]);
   }
-std::string Verbs_Present_Tense::IR_Congrugation_Present_Tense(std::string Verb,
+std::string Verbs_Present_Tense::IR_Conjugation_Present_Tense(std::string Verb,
                                             int Pronoun_index) {
     if (Verb == "ir") {
       Verb.append(Ir_Endings_Present_Tense[Pronoun_index]);
@@ -50,7 +50,7 @@ std::string Verbs_Present_Tense::IR_Congrugation_Present_Tense(std::string Verb,
     Verb.pop_back();
     return Verb.append(IR_Endings_Present_Tense[Pronoun_index]);
   }
-std::string Verbs_Present_Tense::ER_Congrugation_Present_Tense(
+std::string Verbs_Present_Tense::ER_Conjugation_Present_Tense(
     std::string Verb,
                                             int Pronoun_index) {
     if (Verb == "Coger") {
@@ -87,7 +87,7 @@ std::string Verbs_Present_Tense::ER_Congrugation_Present_Tense(
       return Tener_Endings_Present_Tense[Pronoun_index];
     }
     if (Verb == "Traer") {
-      return Decir_Endings_Present_Tense[Pronoun_index];
+      return Traer_Endings_Present_Tense[Pronoun_index];
     }
     if (Verb == "Ver") {
       return Ver_Endings_Present_Tense[Pronoun_index];
@@ -98,6 +98,7 @@ std::string Verbs_Present_Tense::ER_Congrugation_Present_Tense(
     return Verb.append(ER_Endings_Present_Tense[Pronoun_index]);
   }
 std::string Verbs_Present_Tense::Generate_Present_Tense() {
+  std::string End_of_Func = "End of Function";
     int index, verbs_index;
     Verbs_Present_Tense Present_tense;
     Verbs_Pronouns Pronoun;
@@ -112,19 +113,19 @@ std::string Verbs_Present_Tense::Generate_Present_Tense() {
               << std::endl;
     if (it->second.substr(Verb.verbs_map[random_key].length() -
                           Verb.Get_last_2_Letters) == Verb.AR_ending) {
-      return Present_tense.AR_Congrugation_Present_Tense(
+      return Present_tense.AR_Conjugation_Present_Tense(
           Verb.verbs_map[random_key], index);
     }
     if (it->second.substr(Verb.verbs_map[random_key].length() -
                           Verb.Get_last_2_Letters) == Verb.IR_ending) {
-      return Present_tense.IR_Congrugation_Present_Tense(
+      return Present_tense.IR_Conjugation_Present_Tense(
           Verb.verbs_map[random_key], index);
     }
     if (it->second.substr(Verb.verbs_map[random_key].length() -
                           Verb.Get_last_2_Letters) == Verb.ER_ending) {
-      return Present_tense.ER_Congrugation_Present_Tense(
+      return Present_tense.ER_Conjugation_Present_Tense(
           Verb.verbs_map[random_key], index);
       
     }
-    return 0;
+    return End_of_Func; // should never return this
 }

@@ -8,13 +8,13 @@
 #include "Verbs_Infinitive.hpp"
 #include "Present_Tense.hpp"
 
-  std::string Verbs_Present_Continuous::AR_Congrugation_Present_Continous(std::string Verb) {
+  std::string Verbs_Present_Continuous::AR_Conjugation_Present_Continous(std::string Verb) {
 
     Verb.pop_back();
     Verb.pop_back();
     return Verb.append(AR_Endings_Present_Continous);
   }
-  std::string Verbs_Present_Continuous::ER_IR_Congrugation_Present_Continous(
+  std::string Verbs_Present_Continuous::ER_IR_Conjugation_Present_Continous(
       std::string Verb) {
 
     if (Verb == "ir") {
@@ -63,20 +63,20 @@
                 << Pronoun.pronouns[index] + " " + random_key << std::endl;
       if (it->second.substr(Verb.verbs_map[random_key].length() -
                             Verb.Get_last_2_Letters) == Verb.AR_ending) {
-        return Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar",
+        return Verbs_Present_Tense.AR_Conjugation_Present_Tense("Estar",
                                                                  index) +
                " " +
-               Verbs_Present_Continuous.AR_Congrugation_Present_Continous(
+               Verbs_Present_Continuous.AR_Conjugation_Present_Continous(
                    Verb.verbs_map[random_key]);
       }
       if (it->second.substr(Verb.verbs_map[random_key].length() -
                             Verb.Get_last_2_Letters) == Verb.ER_ending ||
           it->second.substr(Verb.verbs_map[random_key].length() -
                             Verb.Get_last_2_Letters) == Verb.ER_ending) {
-        return Verbs_Present_Tense.AR_Congrugation_Present_Tense("Estar",
+        return Verbs_Present_Tense.AR_Conjugation_Present_Tense("Estar",
                                                                  index) +
                " " +
-               Verbs_Present_Continuous.ER_IR_Congrugation_Present_Continous(
+               Verbs_Present_Continuous.ER_IR_Conjugation_Present_Continous(
                    Verb.verbs_map[random_key]);
       }
       return 0;

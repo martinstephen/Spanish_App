@@ -58,11 +58,11 @@ public:
     std::vector<std::string> Ver_Endings_Present_Tense = {
         "Veo", "Ves", "Ve", "Vemos", "Veis", "Ven"};
 
-    std::string AR_Congrugation_Present_Tense(std::string Verb,
+    std::string AR_Conjugation_Present_Tense(std::string Verb,
                                               int Pronoun_index);
-    std::string IR_Congrugation_Present_Tense(std::string Verb,
+    std::string IR_Conjugation_Present_Tense(std::string Verb,
                                               int Pronoun_index);
-    std::string ER_Congrugation_Present_Tense(std::string Verb,
+    std::string ER_Conjugation_Present_Tense(std::string Verb,
                                               int Pronoun_index);
     static std::string Generate_Present_Tense();
 

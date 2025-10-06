@@ -9,5 +9,5 @@ public:
   std::vector<std::string> Endings_Future_Simple = {"a",    "as",  "a",
                                                     "emos", "as", "an"};
 
-  std::string Congrugation_Future_Simple(std::string Verb, int Pronoun_index) ;
+  std::string Conjugation_Future_Simple(std::string Verb, int Pronoun_index) ;
 };

@@ -166,7 +166,7 @@ std::string Generate_Future_Simple()
   std::cout << "Future: " << Pronoun.pronouns[index] + " " + random_key
             << std::endl;
 
-  return Future_Simple.Congrugation_Future_Simple(
+  return Future_Simple.Conjugation_Future_Simple(
       Verb.verbs_map[random_key], index);
   return 0;
 }

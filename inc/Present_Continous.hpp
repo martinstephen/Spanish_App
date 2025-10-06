@@ -18,8 +18,8 @@ public:
   std::string Venir_Present_Continous = {"Viniendo"};
   std::string Decir_Present_Continous = {"Diciendo"};
 
-  std::string AR_Congrugation_Present_Continous(std::string Verb);
-  std::string ER_IR_Congrugation_Present_Continous(std::string Verb);
+  std::string AR_Conjugation_Present_Continous(std::string Verb);
+  std::string ER_IR_Conjugation_Present_Continous(std::string Verb);
 
   static std::string Generate_Present_Continous();
 };
