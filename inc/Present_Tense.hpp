@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include "Pronouns.hpp"
 
 class Verbs_Present_Tense
 {
@@ -59,11 +60,11 @@ public:
         "Veo", "Ves", "Ve", "Vemos", "Veis", "Ven"};
 
     std::string AR_Conjugation_Present_Tense(std::string Verb,
-                                              int Pronoun_index);
+                                              Pronoun pronoun);
     std::string IR_Conjugation_Present_Tense(std::string Verb,
-                                              int Pronoun_index);
+                                              Pronoun pronoun);
     std::string ER_Conjugation_Present_Tense(std::string Verb,
-                                              int Pronoun_index);
+                                              Pronoun pronoun);
     static std::string Generate_Present_Tense();
 
 private:

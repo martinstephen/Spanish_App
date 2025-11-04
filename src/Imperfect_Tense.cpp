@@ -6,29 +6,29 @@
 #include "Pronouns.hpp"
 #include "Verbs_Infinitive.hpp"
 std::string Verbs_Imperfect::AR_Imperfect(std::string Verb,
-                                                  int Pronoun_index) {
+                                                  int pronoun) {
 
   Verb.pop_back();
   Verb.pop_back();
-  return Verb.append(AR_Endings_Imperfect[Pronoun_index]);
+  return Verb.append(AR_Endings_Imperfect[static_cast<int>(pronoun)];
 }
 std::string Verbs_Imperfect::ER_IR_Imperfect(std::string Verb,
-                                                      int Pronoun_index) {
+                                                      int pronoun) {
 
     if (Verb == "Ser") {
-    return Ser_Endings_Imperfect_Tense[Pronoun_index];
+    return Ser_Endings_Imperfect_Tense[pronoun];
   }
     if (Verb == "Ver") {
-    return Ver_Endings_Imperfect_Tense[Pronoun_index];
+    return Ver_Endings_Imperfect_Tense[pronoun];
     }
     if (Verb == "ir") {
-    Verb.append(Ir_Endings_Imperfect_Tense[Pronoun_index]);
+    Verb.append(Ir_Endings_Imperfect_Tense[static_cast<int>(pronoun)];
     return Verb.erase(0, 2);
     }
 
   Verb.pop_back();
   Verb.pop_back();
-  return Verb.append(ER_IR_Endings_Imperfect[Pronoun_index]);
+  return Verb.append(ER_IR_Endings_Imperfect[static_cast<int>(pronoun)];
 }
 std::string Verbs_Imperfect::Generate_Imperfect() {
   int index;

@@ -18,7 +18,7 @@ public:
   std::vector<std::string> Ir_Endings_Imperfect_Tense = {"Iba",   "Ibas", "Iba",
                                                         "qbamos", "Ibais", "Iban"};
 
-  std::string AR_Imperfect(std::string Verb, int Pronoun_index);
-  std::string ER_IR_Imperfect(std::string Verb, int Pronoun_index);
+  std::string AR_Imperfect(std::string Verb, int pronoun);
+  std::string ER_IR_Imperfect(std::string Verb, int pronoun);
   static std::string Generate_Imperfect();
 };

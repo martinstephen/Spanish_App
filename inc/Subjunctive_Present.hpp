@@ -12,6 +12,6 @@ public:
       "a", "as", "a",                            "amos", "Sis", "an"};
   
 
-  std::string AR_Subjunctive_Present(std::string Verb, int Pronoun_index) ;
-  std::string ER_IR_Subjunctive_Presents(std::string Verb, int Pronoun_index) ;
+  std::string AR_Subjunctive_Present(std::string Verb, int pronoun) ;
+  std::string ER_IR_Subjunctive_Presents(std::string Verb, int pronoun) ;
 };
