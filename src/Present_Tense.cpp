@@ -7,7 +7,7 @@
 
 #include "Verbs_Infinitive.hpp"
 #include "Present_Tense.hpp"
-#include "Pronouns.hpp"
+#include "String_Helper.hpp"
 
 
 std::string Verbs_Present_Tense::AR_Conjugation_Present_Tense(std::string Verb, Pronoun pronoun) {
