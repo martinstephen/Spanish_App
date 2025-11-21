@@ -11,6 +11,19 @@
 *.sln.docstates
 */CMakeFile/*
 *.out#
+*.cmake
+*.bin
+*.out
+CMakeCache.txt
+cmake.*
+Makefile*
+*.txt
+*.Make
+CMakeC*
+*.make
+*.ts
+*.marks
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
