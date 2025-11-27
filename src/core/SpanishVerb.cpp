@@ -1,8 +1,17 @@
 #include "core/SpanishVerb.hpp"
 #include "conjugation/ConjugationStrategy.hpp"
-#include "core/Pronoun.hpp"   // adjust include path to match your headers
+#include "Pronouns.hpp"
+#include "conjugation/PresentTenseStrategy.hpp"
 #include <memory>
 #include <stdexcept>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+void setup();
+int Checker(std::string);
+int Dialog();
+
 
 // ctor
 SpanishVerb::SpanishVerb(std::string infinitive)
@@ -20,8 +29,28 @@ std::string SpanishVerb::conjugate(Pronoun p) const {
     }
     return strategy->conjugate(infinitive, p);
 }
+void setup()
+{
+  //SetConsoleOutputCP(CP_UTF8); // set output for spanish characters
+  srand(time(0));              // set seed for random number generation
+  std::cout << "In setup:: ú í ó á é" << "\n";
+}
+
+int Dialog()
+{
+  int i = 0;
+  int Number_of_rounds = 0;
+  std::cout << "In dialog:: ú í ó á é" << "\n"; // set seed for random number generation
+  std::cout << "Enter the number of times you want to test each tense " << "\n";
+  std::cin >> Number_of_rounds;
+  std::cin.ignore();
+
+  return Number_of_rounds;
+}
 
 int main() {
+
+     setup();
     // Create a verb object
     SpanishVerb hablar("hablar");
 

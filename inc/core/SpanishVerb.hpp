@@ -1,3 +1,11 @@
+
+#pragma once
+
+#include <iostream>
+#include <memory>
+#include <string>
+#include "conjugation/ConjugationStrategy.hpp"
+#include "Pronouns.hpp"
 class SpanishVerb {
 public:
     SpanishVerb(std::string infinitive);
