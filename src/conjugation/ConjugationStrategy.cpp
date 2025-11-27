@@ -1,5 +1,6 @@
 #include "conjugation/ConjugationStrategy.hpp"
 #include <stdexcept>
+#include <vector>
 
 std::string ConjugationStrategy::getStem(const std::string& verb) const {
     if (verb.length() < 2) {
