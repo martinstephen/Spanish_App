@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include <iostream>
+
 #include <memory>
 #include <string>
 #include "conjugation/ConjugationStrategy.hpp"

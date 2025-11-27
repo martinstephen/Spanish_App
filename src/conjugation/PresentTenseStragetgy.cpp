@@ -1,20 +1,21 @@
 #include "conjugation/PresentTenseStrategy.hpp"
+#include "conjugation/ConjugationStrategy.hpp"
 #include <stdexcept>
+#include <set>
+// PresentTenseStrategy::ConjugationStrategy() {
+//     // Initialize regular endings
+//     arEndings = {"o", "as", "a", "amos", "áis", "an"};
+//     erEndings = {"o", "es", "e", "emos", "éis", "en"};
+//     irEndings = {"o", "es", "e", "imos", "ís", "en"};
 
-PresentTenseStrategy::PresentTenseStrategy() {
-    // Initialize regular endings
-    arEndings = {"o", "as", "a", "amos", "áis", "an"};
-    erEndings = {"o", "es", "e", "emos", "éis", "en"};
-    irEndings = {"o", "es", "e", "imos", "ís", "en"};
-
-    // Initialize irregular verbs
-    addIrregularVerb("estar", {"estoy", "estás", "está", "estamos", "estáis", "están"});
-    addIrregularVerb("ser", {"soy", "eres", "es", "somos", "sois", "son"});
-    addIrregularVerb("ir", {"voy", "vas", "va", "vamos", "vais", "van"});
-    addIrregularVerb("tener", {"tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"});
-    addIrregularVerb("hacer", {"hago", "haces", "hace", "hacemos", "hacéis", "hacen"});
-    // Add more irregular verbs as needed
-}
+//     // Initialize irregular verbs
+//     // addIrregularVerb("estar", {"estoy", "estás", "está", "estamos", "estáis", "están"});
+//     // addIrregularVerb("ser", {"soy", "eres", "es", "somos", "sois", "son"});
+//     // addIrregularVerb("ir", {"voy", "vas", "va", "vamos", "vais", "van"});
+//     // addIrregularVerb("tener", {"tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"});
+//     // addIrregularVerb("hacer", {"hago", "haces", "hace", "hacemos", "hacéis", "hacen"});
+//     // Add more irregular verbs as needed
+// };
 
 std::string PresentTenseStrategy::conjugate(const std::string& verb, Pronoun pronoun) const {
     // Check for null/empty verb
@@ -23,18 +24,18 @@ std::string PresentTenseStrategy::conjugate(const std::string& verb, Pronoun pro
     }
 
     // Check if it's an irregular verb first
-    if (isIrregular(verb)) {
-        try {
-            return irregularVerbs.at(verb).at(static_cast<size_t>(pronoun));
-        } catch (const std::out_of_range& e) {
-            throw std::runtime_error("Invalid pronoun index for irregular verb: " + verb);
-        }
-    }
+    // if (isIrregular(verb)) {
+    //     try {
+    //         return irregularVerbs.at(verb).at(static_cast<size_t>(pronoun));
+    //     } catch (const std::out_of_range& e) {
+    //         throw std::runtime_error("Invalid pronoun index for irregular verb: " + verb);
+    //     }
+    // }
 
     // Handle regular verbs
     try {
-        std::string stem = getStem(verb);
-        std::string ending = getEnding(verb, pronoun);
+        std::string stem = ConjugationStrategy::getStem(verb);
+        std::string ending = ConjugationStrategy::getEnding(verb, pronoun);
         
         // Handle stem-changing verbs (e->ie, o->ue, etc.)
         if (isStemChanging(verb)) {
