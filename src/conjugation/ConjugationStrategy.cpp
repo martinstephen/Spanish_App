@@ -1,12 +1,16 @@
 #include "conjugation/ConjugationStrategy.hpp"
 #include <stdexcept>
 #include <vector>
+#include <iostream>
 
 std::string ConjugationStrategy::getStem(const std::string& verb) const {
     if (verb.length() < 2) {
         throw std::invalid_argument("Verb must be at least 2 characters long");
     }
     // Remove the last two characters (ar, er, or ir ending)
+    std::cout << "Getting stem for verb: " << verb << "\n";
+    std::string substring = verb.substr(0, verb.length() - 2 );
+    std::cout << substring << "\n";
     return verb.substr(0, verb.length() - 2);
 }
 
@@ -37,7 +41,6 @@ std::string ConjugationStrategy::getEnding(const std::string& verb, Pronoun pron
 void ConjugationStrategy::addIrregularVerb(const std::string& verb, 
                                          const std::vector<std::string>& conjugations) {
     if (conjugations.size() != static_cast<size_t>(Pronoun::Count)) {
-        throw std::invalid_argument("Invalid number of conjugations provided");
-    }
+        throw std::invalid_argument("Invalid number of conjugations provided");}
     irregularVerbs[verb] = conjugations;
 }
