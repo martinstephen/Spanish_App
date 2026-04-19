@@ -53,17 +53,20 @@ int main() {
      setup();
     // Create a verb object
     SpanishVerb hablar("hablar");
-
+    SpanishVerb IR("ir");
     // Create the present tense strategy
     auto presentStrategy = std::make_shared<PresentTenseStrategy>();
 
     // Assign the strategy to the verb
     hablar.setStrategy(presentStrategy);
+    IR.setStrategy(presentStrategy);
 
     // Conjugate for 'Yo'
     std::string yoForm = hablar.conjugate(Pronoun::Yo);
     std::cout << "Yo form: " << yoForm << std::endl; // expected "hablo"
 
+     std::string yoIR = IR.conjugate(Pronoun::Yo);
+    std::cout << "Yo form: " << yoIR << std::endl; // expected "voy"
     // Conjugate for 'Nosotros'
     std::string nosotrosForm = hablar.conjugate(Pronoun::Nosotros);
     std::cout << "Nosotros form: " << nosotrosForm << std::endl; // expected "hablamos"
