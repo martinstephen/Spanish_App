@@ -25,79 +25,79 @@ std::string Verbs_Present_Tense::AR_Conjugation_Present_Tense(std::string Verb, 
     Verb.pop_back();
     return Verb.append(AR_Endings_Present_Tense[static_cast<int>(pronoun)]);
   }
-// std::string Verbs_Present_Tense::IR_Conjugation_Present_Tense(std::string Verb,
-//                                             Pronoun pronoun) {
-//     if (Verb == "ir") {
-//       Verb.append(Ir_Endings_Present_Tense[static_cast<int>(pronoun)];
-//       return Verb.erase(0, 2);
-//     }
-//     if (Verb == "Decir") {
-//       return Decir_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Pedir") {
-//       return Pedir_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Salir") {
-//       return Salir_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Venir") {
-//       return Venir_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Oír") {
-//       return Oír_Endings_Present_Tense[pronoun];
-//     }
+std::string Verbs_Present_Tense::IR_Conjugation_Present_Tense(std::string Verb,
+                                            Pronoun pronoun) {
+    if (Verb == "ir") {
+      Verb.append(Ir_Endings_Present_Tense[static_cast<int>(pronoun)]);
+      return Verb.erase(0, 2);
+    }
+    if (Verb == "Decir") {
+      return Decir_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Pedir") {
+      return Pedir_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Salir") {
+      return Salir_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Venir") {
+      return Venir_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Oír") {
+      return Oír_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
 
-//     Verb.pop_back();
-//     Verb.pop_back();
-//     return Verb.append(IR_Endings_Present_Tense[static_cast<int>(pronoun)];
-//   }
-// std::string Verbs_Present_Tense::ER_Conjugation_Present_Tense(
-//     std::string Verb,
-//                                             Pronoun pronoun) {
-//     if (Verb == "Coger") {
-//       return Coger_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Conocer") {
-//       return Conocer_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Haber") {
-//       return Haber_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Hacer") {
-//       return Hacer_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Pensar") {
-//       return Pensar_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Poder") {
-//       return Poder_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Poner") {
-//       return Poner_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Querer") {
-//       return Querer_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Saber") {
-//       return Saber_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Ser") {
-//       return Ser_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Tener") {
-//       return Tener_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Traer") {
-//       return Traer_Endings_Present_Tense[pronoun];
-//     }
-//     if (Verb == "Ver") {
-//       return Ver_Endings_Present_Tense[pronoun];
-//     }
+    Verb.pop_back();
+    Verb.pop_back();
+    return Verb.append(IR_Endings_Present_Tense[static_cast<int>(pronoun)]);
+  }
+std::string Verbs_Present_Tense::ER_Conjugation_Present_Tense(
+    std::string Verb,
+                                            Pronoun pronoun) {
+    if (Verb == "Coger") {
+      return Coger_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Conocer") {
+      return Conocer_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Haber") {
+      return Haber_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Hacer") {
+      return Hacer_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Pensar") {
+      return Pensar_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Poder") {
+      return Poder_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Poner") {
+      return Poner_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Querer") {
+      return Querer_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Saber") {
+      return Saber_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Ser") {
+      return Ser_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Tener") {
+      return Tener_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Traer") {
+      return Traer_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
+    if (Verb == "Ver") {
+      return Ver_Endings_Present_Tense[static_cast<int>(pronoun)];
+    }
 
-//     Verb.pop_back();
-//     Verb.pop_back();
-//     return Verb.append(ER_Endings_Present_Tense[static_cast<int>(pronoun)];
-//   }
+    Verb.pop_back();
+    Verb.pop_back();
+    return Verb.append(ER_Endings_Present_Tense[static_cast<int>(pronoun)]);
+  }
 std::string Verbs_Present_Tense::Generate_Present_Tense() {
     std::string End_of_Func = "End of Function";
     int index, verbs_index;
