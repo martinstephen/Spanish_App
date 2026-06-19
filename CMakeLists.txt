@@ -4,16 +4,22 @@ cmake_minimum_required(VERSION 3.5)
 project(Spanish_Verbs_APP)
 
 
-include_directories(inc)
+include_directories(
+inc/ 
+inc/util/ 
+inc/core/ 
+inc/conjugation/)
 # Add main.cpp file of project root directory as source file
 set (SOURCE_FILES 
-src/Spanish_Verbs.cpp 
-src/Pronouns.cpp
+src/core/SpanishVerb.cpp 
+src/util/String_Helper.cpp
+src/conjugation/ConjugationStrategy.cpp
+src/conjugation/PresentTenseStragetgy.cpp 
 #src/Future_Tense_Simple.cpp  
 #src/Imperfect_Tense.cpp 
 #src/Indefinite_Tense.cpp 
 #src/Present_Continuous.cpp 
-src/Present_Tense.cpp 
+#src/Present_Tense.cpp 
 #src/Subjunctive_Present.cpp 
 )
 

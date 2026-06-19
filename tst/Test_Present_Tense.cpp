@@ -12,25 +12,25 @@ TEST_CASE("AR_Conjugation_Present_Tense returns correct conjugation", "[present_
     REQUIRE(pt.AR_Conjugation_Present_Tense("bailar", Pronoun::Yo) == "bailo");
 }
 
-// TEST_CASE("ER_Conjugation_Present_Tense returns correct conjugation", "[present_tense]") {
-//     Verbs_Present_Tense pt;
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("comer", 0) == "como");
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("comer", 1) == "comes");
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("comer", 2) == "come");
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("beber", 3) == "bebemos");
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("leer", 4) == "leéis");
-//     REQUIRE(pt.ER_Conjugation_Present_Tense("correr", 5) == "corren");
-// }
+TEST_CASE("ER_Conjugation_Present_Tense returns correct conjugation", "[present_tense]") {
+    Verbs_Present_Tense pt;
+    REQUIRE(pt.ER_Conjugation_Present_Tense("comer", Pronoun::Yo) == "como");
+    REQUIRE(pt.ER_Conjugation_Present_Tense("comer", Pronoun::Tu) == "comes");
+    REQUIRE(pt.ER_Conjugation_Present_Tense("comer", Pronoun::El_Ella_Usted) == "come");
+    REQUIRE(pt.ER_Conjugation_Present_Tense("beber", Pronoun::Nosotros) == "bebemos");
+    REQUIRE(pt.ER_Conjugation_Present_Tense("leer", Pronoun::Vosotros) == "leéis");
+    REQUIRE(pt.ER_Conjugation_Present_Tense("correr", Pronoun::Ellos_Ellas_Ustedes) == "corren");
+}
 
-// TEST_CASE("IR_Conjugation_Present_Tense returns correct conjugation", "[present_tense]") {
-//     Verbs_Present_Tense pt;
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", 0) == "vivo");
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", 1) == "vives");
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", 2) == "vive");
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("escribir", 3) == "escribimos");
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("abrir", 4) == "abrís");
-//     REQUIRE(pt.IR_Conjugation_Present_Tense("recibir", 5) == "reciben");
-// }
+TEST_CASE("IR_Conjugation_Present_Tense returns correct conjugation", "[present_tense]") {
+    Verbs_Present_Tense pt;
+    REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", Pronoun::Yo) == "vivo");
+    REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", Pronoun::Tu) == "vives");
+    REQUIRE(pt.IR_Conjugation_Present_Tense("vivir", Pronoun::El_Ella_Usted) == "vive");
+    REQUIRE(pt.IR_Conjugation_Present_Tense("escribir", Pronoun::Nosotros) == "escribimos");
+    REQUIRE(pt.IR_Conjugation_Present_Tense("abrir", Pronoun::Vosotros) == "abrís");
+    REQUIRE(pt.IR_Conjugation_Present_Tense("recibir", Pronoun::Ellos_Ellas_Ustedes) == "reciben");
+}
 
 // TEST_CASE("Irregular verbs in present tense", "[present_tense]") {
 //     Verbs_Present_Tense pt;
