@@ -14,8 +14,8 @@ set (SOURCE_FILES
 src/core/SpanishVerb.cpp 
 src/util/String_Helper.cpp
 src/conjugation/ConjugationStrategy.cpp
-src/conjugation/PresentTenseStragetgy.cpp 
-#src/Future_Tense_Simple.cpp  
+src/conjugation/PresentTenseStrategy.cpp 
+src/Future_Tense_Simple.cpp  
 #src/Imperfect_Tense.cpp 
 #src/Indefinite_Tense.cpp 
 #src/Present_Continuous.cpp 
